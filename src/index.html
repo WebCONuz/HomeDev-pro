@@ -30,11 +30,113 @@
   <body>
     <div
       id="root-body"
-      class="w-full h-screen border-2 border-red-500 bg-[#f8f8f8] relative overflow-hidden"
+      class="w-full h-screen bg-[#f8f8f8] relative overflow-hidden"
     >
-      <header class="header border-2 border-green-500 py-8">
-        <div class="container"></div>
+      <header class="header py-8">
+        <div class="container">
+          <div class="flex items-center justify-between">
+            <a href="#" class="logo">
+              <h2 class="text-5xl font-bold">
+                Home<span class="text-[#00B533]">Dev</span>
+              </h2>
+            </a>
+            <div class="header__btns flex font-semibold">
+              <button
+                class="order-btn py-[10px] px-9 rounded-3xl bg-[#00B533] text-white text-xl"
+              >
+                Buyurtma berish
+              </button>
+              <div class="menu-btn flex items-center ml-[138px]">
+                <span class="text-2xl">Menyu</span>
+                <img
+                  src="./images/menu.svg"
+                  alt="burger"
+                  class="w-[35px] ml-4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
+
+      <aside
+        class="fixed w-[66px] bg-[#00B533] text-white h-[80vh] left-0 top-[90px] rounded-r-[40px] py-12 flex flex-col justify-between items-center"
+      >
+        <a
+          href="#"
+          class="w-[50px] h-[50px] rounded-2xl bg-white flex justify-center items-center text-[#00B533] shadow-md"
+        >
+          <i class="bx bxs-phone text-2xl"></i>
+        </a>
+        <ul class="list flex flex-col items-center">
+          <li
+            class="bg-[#086000] w-[20px] h-[20px] text-xs text-white rounded-full mb-[10px] flex items-center justify-center"
+          >
+            <span>1</span>
+          </li>
+          <li
+            class="bg-[#086000] w-[12px] h-[12px] text-[8px] text-[#086000] rounded-full mb-[10px] flex items-center justify-center"
+          >
+            <span>2</span>
+          </li>
+          <li
+            class="bg-[#086000] w-[12px] h-[12px] text-[8px] text-[#086000] rounded-full mb-[10px] flex items-center justify-center"
+          >
+            <span>3</span>
+          </li>
+          <li
+            class="bg-[#086000] w-[12px] h-[12px] text-[8px] text-[#086000] rounded-full mb-[10px] flex items-center justify-center"
+          >
+            <span>4</span>
+          </li>
+          <li
+            class="bg-[#086000] w-[12px] h-[12px] text-[8px] text-[#086000] rounded-full mb-[10px] flex items-center justify-center"
+          >
+            <span>5</span>
+          </li>
+          <li
+            class="bg-[#086000] w-[12px] h-[12px] text-[8px] text-[#086000] rounded-full flex items-center justify-center"
+          >
+            <span>6</span>
+          </li>
+        </ul>
+        <ul class="social">
+          <li
+            class="w-[30px] h-[30px] rounded-full border border-white hover:border-[#086000] flex justify-center items-center duration-200"
+          >
+            <a
+              href="#"
+              class="bx bxl-facebook text-white hover:text-[#086000] duration-200"
+            ></a>
+          </li>
+          <li
+            class="w-[30px] h-[30px] rounded-full border border-white hover:border-[#086000] flex justify-center items-center duration-200 mt-3"
+          >
+            <a
+              href="#"
+              class="bx bxl-instagram text-white hover:text-[#086000] duration-200"
+            ></a>
+          </li>
+          <li
+            class="w-[30px] h-[30px] rounded-full border border-white hover:border-[#086000] flex justify-center items-center duration-200 mt-3"
+          >
+            <a
+              href="#"
+              class="bx bxl-twitter text-white hover:text-[#086000] duration-200"
+            ></a>
+          </li>
+        </ul>
+      </aside>
+
+      <h1
+        class="title fixed top-[340px] -right-[220px] text-6xl uppercase font-bold rotate-90 text-[#F8F8F8]"
+      >
+        HomeDev AGENCY
+      </h1>
+
+      <div
+        class="circle w-[343px] h-[343px] bg-[#1FEBB0] fixed -right-[12%] -bottom-[25%] rounded-full"
+      ></div>
     </div>
   </body>
 </html>

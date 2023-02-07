@@ -19,3 +19,82 @@ body {
 .about-circle {
   box-shadow: 0px 0px 30px #049d2f;
 }
+
+.left-section__item:hover,
+.left-section__item.active,
+.right-section__item:hover {
+  box-shadow: 0px 0px 20px #049d2f;
+  background-color: #1febb0;
+}
+
+/* Customer slider ----------------------------- */
+.service__carousel .owl-stage-outer {
+  padding: 1rem 0;
+}
+.service__carousel .owl-nav button {
+  position: absolute;
+  bottom: -10%;
+  background-color: transparent !important;
+  width: 75px;
+  height: 20px;
+  transition: 0.2s;
+  display: block;
+}
+.service__carousel .owl-nav button span {
+  display: none;
+}
+.service__carousel .owl-nav button.owl-prev {
+  right: -10%;
+  background-image: url("../images/next.svg") !important;
+  background-size: 100% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.service__carousel .owl-nav button.owl-next {
+  left: -10%;
+  background-image: url("../images/prev.svg") !important;
+  background-size: 100% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.special {
+  background-image: url("./images/fresh-melientha.png");
+  background-repeat: no-repeat;
+  background-position: right 0% bottom 5%;
+  background-size: 35%;
+}
+
+/* @media screen and (max-width: 1536px) {
+  .service__carousel .owl-nav button.owl-prev {
+    right: 40%;
+  }
+} */
+
+/* @media screen and (max-width: 1024px) {
+  .service__carousel .owl-nav button {
+    bottom: 5%;
+    width: 48px;
+    height: 48px;
+  }
+  .service__carousel .owl-nav button.owl-next {
+    right: 15%;
+  }
+  .service__carousel .owl-nav button.owl-prev {
+    right: 25%;
+  }
+} */
+
+/* @media screen and (max-width: 640px) {
+  .service__carousel .owl-nav button {
+    bottom: 5%;
+    width: 40px;
+    height: 40px;
+  }
+  .service__carousel .owl-nav button.owl-next {
+    right: 10%;
+  }
+  .service__carousel .owl-nav button.owl-prev {
+    right: 25%;
+  }
+} */

@@ -22,6 +22,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- owl-carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
     <!-- main css -->
@@ -72,22 +80,22 @@
           <li
             class="bg-[#086000] w-[20px] h-[20px] text-xs text-white rounded-full mb-[10px] flex items-center justify-center"
           >
-            <span>1</span>
+            <a href="#intro">1</a>
           </li>
           <li
             class="bg-[#086000] w-[12px] h-[12px] text-[8px] text-[#086000] rounded-full mb-[10px] flex items-center justify-center"
           >
-            <span>2</span>
+            <a href="#about">2</a>
           </li>
           <li
             class="bg-[#086000] w-[12px] h-[12px] text-[8px] text-[#086000] rounded-full mb-[10px] flex items-center justify-center"
           >
-            <span>3</span>
+            <a href="#service">3</a>
           </li>
           <li
             class="bg-[#086000] w-[12px] h-[12px] text-[8px] text-[#086000] rounded-full mb-[10px] flex items-center justify-center"
           >
-            <span>4</span>
+            <a href="#portfolio">4</a>
           </li>
           <li
             class="bg-[#086000] w-[12px] h-[12px] text-[8px] text-[#086000] rounded-full mb-[10px] flex items-center justify-center"
@@ -134,17 +142,14 @@
         HomeDev AGENCY
       </h1>
 
-      <div
+      <!-- <div
         class="circle w-[343px] h-[343px] bg-[#1FEBB0] fixed -right-[8%] -bottom-[20%] rounded-full"
-      ></div>
+      ></div> -->
 
       <div class="container w-[85%] h-[80vh] z-10 border border-blue-500">
-        <div class="h-full overflow-y-scroll overflow-x-hidden">
+        <div class="h-full overflow-hidden">
           <!-- Intro section -->
-          <section
-            id="intro"
-            class="h-full flex items-center border border-green-500"
-          >
+          <section id="intro" class="h-full flex items-center">
             <div class="w-[55%]">
               <h1 class="font-bold text-5xl mb-36 leading-[70px]">
                 HomeDev - Creating a Better IT Solutions.
@@ -165,7 +170,7 @@
           </section>
 
           <!-- About section -->
-          <section id="about" class="h-full border border-green-500 pt-4">
+          <section id="about" class="h-full pt-4">
             <div class="about__title text-center">
               <h2 class="font-bold text-5xl mb-8 max-w-[738px] mx-auto">
                 Who are we?
@@ -231,9 +236,150 @@
               </div>
             </div>
           </section>
+
+          <!-- Services section -->
+          <section id="service" class="service h-full pt-4 relative">
+            <h2 class="font-bold text-5xl mb-20 text-center">Our services</h2>
+
+            Service Slider
+            <div class="service__carousel owl-carousel max-w-[350px] mx-auto">
+              <div class="service__carousel--item text-center">
+                <h3 class="text-2xl mb-5 font-medium">Website development</h3>
+                <p
+                  class="text-lg leading-6 text-[#00282F] h-[205px] overflow-hidden"
+                >
+                  Качественный сайт – это основа продвижения Вашего бизнеса в
+                  интернете. Он создаёт имидж компании и увеличивает Ваши
+                  продажи 24/7. Мы сделаем для Вас рабочий инструмент, который
+                  значительно поможет в развитии бизнеса.
+                </p>
+              </div>
+              <div class="service__carousel--item text-center">
+                <h3 class="text-2xl mb-5 font-medium">Microservices</h3>
+                <p
+                  class="text-lg leading-6 text-[#00282F] h-[205px] overflow-hidden"
+                >
+                  Качественный сайт – это основа продвижения Вашего бизнеса в
+                  интернете. Он создаёт имидж компании и увеличивает Ваши
+                  продажи 24/7. Мы сделаем для Вас рабочий инструмент, который
+                  значительно поможет в развитии бизнеса.
+                </p>
+              </div>
+              <div class="service__carousel--item text-center">
+                <h3 class="text-2xl mb-5 font-medium">Mobile App</h3>
+                <p
+                  class="text-lg leading-6 text-[#00282F] h-[205px] overflow-hidden"
+                >
+                  Качественный сайт – это основа продвижения Вашего бизнеса в
+                  интернете. Он создаёт имидж компании и увеличивает Ваши
+                  продажи 24/7. Мы сделаем для Вас рабочий инструмент, который
+                  значительно поможет в развитии бизнеса.
+                </p>
+              </div>
+            </div>
+
+            Left Section
+            <div
+              class="left-section w-[454px] h-[454px] rounded-full border border-[#1FEBB0] absolute top-1/2 -left-1/2 -translate-y-1/2 translate-x-2/3"
+            >
+              <div
+                class="left-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute right-[15%] -top-[5%] duration-150"
+              >
+                <img
+                  src="./images/service-icon1.png"
+                  alt="service-icon"
+                  class="w-8"
+                />
+              </div>
+              <div
+                class="left-section__item active w-[100px] h-[100px] rounded-full border border-[#1FEBB0] flex items-center justify-center absolute -right-[8%] top-[20%] duration-150"
+              >
+                <img
+                  src="./images/service-icon2.png"
+                  alt="service-icon"
+                  class="w-9"
+                />
+              </div>
+              <div
+                class="left-section__item w-[100px] h-[100px] rounded-full border border-[#1FEBB0] bg-white flex items-center justify-center absolute -right-[8%] bottom-[20%] duration-150"
+              >
+                <img
+                  src="./images/service-icon3.png"
+                  alt="service-icon"
+                  class="w-10"
+                />
+              </div>
+              <div
+                class="left-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute right-[15%] -bottom-[5%] duration-150"
+              >
+                <img
+                  src="./images/service-icon4.png"
+                  alt="service-icon"
+                  class="w-6"
+                />
+              </div>
+            </div>
+
+            Right Section
+            <div
+              class="right-section w-[454px] h-[454px] rounded-full border border-[#1FEBB0] absolute top-1/2 -right-1/2 -translate-y-1/2 -translate-x-2/3"
+            >
+              <div
+                class="right-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute left-[15%] -top-[5%] duration-150"
+              >
+                <img
+                  src="./images/service-icon4.png"
+                  alt="service-icon"
+                  class="w-6"
+                />
+              </div>
+              <div
+                class="right-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute -left-[8%] top-[20%] duration-150"
+              >
+                <img
+                  src="./images/service-icon3.png"
+                  alt="service-icon"
+                  class="w-10"
+                />
+              </div>
+              <div
+                class="right-section__item w-[100px] h-[100px] rounded-full border border-[#1FEBB0] bg-white flex items-center justify-center absolute -left-[8%] bottom-[20%] duration-150"
+              >
+                <img
+                  src="./images/service-icon2.png"
+                  alt="service-icon"
+                  class="w-9"
+                />
+              </div>
+              <div
+                class="right-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute left-[15%] -bottom-[5%] duration-150"
+              >
+                <img
+                  src="./images/service-icon1.png"
+                  alt="service-icon"
+                  class="w-8"
+                />
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
+
+    <!-- script files -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
 

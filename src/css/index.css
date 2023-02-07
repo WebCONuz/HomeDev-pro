@@ -4,8 +4,11 @@ body {
 }
 
 .title {
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   z-index: 2;
+  -webkit-text-fill-color: transparent;
+  /* -webkit-text-stroke: rgba(0, 0, 0, 0.3); */
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke-width: 1px;
 }
 
 .circle {

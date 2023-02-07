@@ -43,9 +43,9 @@
       <header class="header py-8">
         <div class="container">
           <div class="flex items-center justify-between">
-            <a href="#" class="logo">
+            <a href="#intro" class="logo">
               <h2 class="flex items-baseline">
-                <img src="./images/homedev2.png" alt="logo" class="w-14" />
+                <img src="./images/homedev.png" alt="logo" class="w-14" />
                 <span class="text-[#00B533] text-5xl font-bold ml-2"
                   >HomeDev</span
                 >
@@ -57,13 +57,51 @@
               >
                 Place an order
               </button>
-              <div class="menu-btn flex items-center ml-[138px] cursor-pointer">
+              <div
+                class="menu-btn nav-menu flex items-center ml-[138px] cursor-pointer relative"
+              >
                 <span class="text-2xl">Menu</span>
                 <img
                   src="./images/menu.svg"
                   alt="burger"
                   class="w-[35px] ml-4"
                 />
+                <ul
+                  class="menuList absolute top-[50px] right-0 z-20 w-[150px] p-4 shadow-lg hidden flex-col bg-white rounded-lg duration-200"
+                >
+                  <li class="mb-2">
+                    <a href="#intro" class="hover:text-[#00b533] duration-200"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="#about" class="hover:text-[#00b533] duration-200"
+                      >About us</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="#service" class="hover:text-[#00b533] duration-200"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="#portfolio"
+                      class="hover:text-[#00b533] duration-200"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="#blog" class="hover:text-[#00b533] duration-200"
+                      >Blog & News</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="#contact" class="hover:text-[#00b533] duration-200"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -79,7 +117,7 @@
         >
           <i class="bx bxs-phone text-2xl"></i>
         </a>
-        <ul class="list flex flex-col items-center">
+        <ul class="aside-list flex flex-col items-center">
           <li
             class="bg-[#086000] w-[20px] h-[20px] text-xs text-white rounded-full mb-[10px] flex items-center justify-center"
           >
@@ -149,8 +187,8 @@
         class="circle w-[343px] h-[343px] bg-[#1FEBB0] fixed -right-[8%] -bottom-[20%] rounded-full"
       ></div>
 
-      <div class="container w-[85%] h-[80vh] z-10 border border-blue-500">
-        <div class="h-full overflow-hidden">
+      <div class="container w-[85%] h-[80vh] z-10">
+        <div class="h-full overflow-hidden scroll-smooth">
           <!-- Intro section -->
           <section id="intro" class="h-full flex items-center">
             <div class="w-[55%]">
@@ -543,7 +581,7 @@
                     placeholder="Your phone number"
                   />
                   <textarea
-                    class="w-full mb-4 h-[80px] py-2 px-4 placeholder:text-[#00282f63] focus:outline-0 focus:ring focus:ring-green-300 shadow-md rounded-md border border-gray-200"
+                    class="w-full resize-none mb-4 h-[80px] py-2 px-4 placeholder:text-[#00282f63] focus:outline-0 focus:ring focus:ring-green-300 shadow-md rounded-md border border-gray-200"
                     placeholder="Your message"
                   ></textarea>
                   <div class="flex justify-end">

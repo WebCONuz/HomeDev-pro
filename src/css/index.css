@@ -31,7 +31,8 @@ body {
 .service__carousel .owl-stage-outer {
   padding: 1rem 0;
 }
-.service__carousel .owl-nav button {
+.service__carousel .owl-nav button,
+.blog__slider .owl-nav button {
   position: absolute;
   bottom: -10%;
   background-color: transparent !important;
@@ -40,27 +41,52 @@ body {
   transition: 0.2s;
   display: block;
 }
+.blog__slider .owl-nav button {
+  bottom: -20%;
+}
 .service__carousel .owl-nav button span {
   display: none;
 }
-.service__carousel .owl-nav button.owl-prev {
+.service__carousel .owl-nav button.owl-prev,
+.blog__slider .owl-nav button.owl-prev {
   right: -10%;
   background-image: url("../images/next.svg") !important;
   background-size: 100% !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
-.service__carousel .owl-nav button.owl-next {
+.blog__slider .owl-nav button.owl-prev {
+  right: 38%;
+}
+.service__carousel .owl-nav button.owl-next,
+.blog__slider .owl-nav button.owl-next {
   left: -10%;
   background-image: url("../images/prev.svg") !important;
   background-size: 100% !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
+.blog__slider .owl-nav button.owl-next {
+  left: 38%;
+}
 
-.special {
-  background-image: url("./images/fresh-melientha.png");
-  background-repeat: no-repeat;
-  background-position: right 0% bottom 5%;
-  background-size: 35%;
+.owl-dots {
+  margin-top: 1rem;
+  text-align: center;
+  position: absolute;
+  bottom: -19%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.owl-dots .owl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #1febb0 !important;
+  opacity: 0.5;
+}
+.owl-dots .owl-dot.active {
+  background-color: #00b533 !important;
+  opacity: 1;
 }

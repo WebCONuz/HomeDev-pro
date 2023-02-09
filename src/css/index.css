@@ -34,7 +34,7 @@ body {
 .service__carousel .owl-nav button,
 .blog__slider .owl-nav button {
   position: absolute;
-  bottom: -10%;
+  bottom: -15%;
   background-color: transparent !important;
   width: 75px;
   height: 20px;
@@ -49,7 +49,7 @@ body {
 }
 .service__carousel .owl-nav button.owl-prev,
 .blog__slider .owl-nav button.owl-prev {
-  right: -10%;
+  right: 10%;
   background-image: url("../images/next.svg") !important;
   background-size: 100% !important;
   background-position: center !important;
@@ -60,7 +60,7 @@ body {
 }
 .service__carousel .owl-nav button.owl-next,
 .blog__slider .owl-nav button.owl-next {
-  left: -10%;
+  left: 10%;
   background-image: url("../images/prev.svg") !important;
   background-size: 100% !important;
   background-position: center !important;

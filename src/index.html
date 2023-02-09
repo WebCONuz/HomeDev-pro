@@ -35,578 +35,692 @@
     <!-- main css -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body>
-    <div
-      id="root-body"
-      class="w-full h-screen bg-[#f8f8f8] relative overflow-hidden"
-    >
-      <header class="header py-8">
-        <div class="container">
-          <div class="flex items-center justify-between">
-            <a href="#intro" class="logo">
-              <h2 class="flex items-baseline">
-                <img src="./images/homedev.png" alt="logo" class="w-14" />
-                <span class="text-[#00B533] text-5xl font-bold ml-2"
-                  >HomeDev</span
-                >
-              </h2>
-            </a>
-            <div class="header__btns flex font-semibold">
-              <button
-                class="order-btn py-[10px] px-9 rounded-3xl bg-[#00B533] text-white text-xl hover:bg-[#00b503] duration-200"
+  <body class="bg-[#f8f8f8] overflow-x-hidden">
+    <!-- Header Section -->
+    <header class="header py-8">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <a href="#intro" class="logo">
+            <h2 class="flex items-baseline">
+              <img src="./images/homedev.png" alt="logo" class="w-14" />
+              <span class="text-[#00B533] text-5xl font-bold ml-2"
+                >HomeDev</span
               >
-                Place an order
-              </button>
-              <div
-                class="menu-btn nav-menu flex items-center ml-[138px] cursor-pointer relative"
-              >
-                <span class="text-2xl">Menu</span>
-                <img
-                  src="./images/menu.svg"
-                  alt="burger"
-                  class="w-[35px] ml-4"
-                />
-                <ul
-                  class="menuList absolute top-[50px] right-0 z-20 w-[150px] p-4 shadow-lg hidden flex-col bg-white rounded-lg duration-200"
-                >
-                  <li class="mb-2">
-                    <a href="#intro" class="hover:text-[#00b533] duration-200"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="mb-2">
-                    <a href="#about" class="hover:text-[#00b533] duration-200"
-                      >About us</a
-                    >
-                  </li>
-                  <li class="mb-2">
-                    <a href="#service" class="hover:text-[#00b533] duration-200"
-                      >Services</a
-                    >
-                  </li>
-                  <li class="mb-2">
-                    <a
-                      href="#portfolio"
-                      class="hover:text-[#00b533] duration-200"
-                      >Portfolio</a
-                    >
-                  </li>
-                  <li class="mb-2">
-                    <a href="#blog" class="hover:text-[#00b533] duration-200"
-                      >Blog & News</a
-                    >
-                  </li>
-                  <li class="">
-                    <a href="#contact" class="hover:text-[#00b533] duration-200"
-                      >Contact</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <aside
-        class="fixed w-[66px] bg-[#00B533] text-white h-[80vh] left-0 top-[90px] rounded-r-[40px] py-12 flex flex-col justify-between items-center"
-      >
-        <a
-          href="#"
-          class="w-[50px] h-[50px] rounded-2xl bg-white flex justify-center items-center text-[#00B533] shadow-md"
-        >
-          <i class="bx bxs-phone text-2xl"></i>
-        </a>
-        <ul class="aside-list flex flex-col items-center">
-          <li
-            class="bg-[#086000] w-[20px] h-[20px] text-xs text-white rounded-full mb-[10px] flex items-center justify-center"
-          >
-            <a href="#intro">1</a>
-          </li>
-          <li
-            class="bg-[#086000] w-[12px] h-[12px] text-[8px] text-[#086000] rounded-full mb-[10px] flex items-center justify-center"
-          >
-            <a href="#about">2</a>
-          </li>
-          <li
-            class="bg-[#086000] w-[12px] h-[12px] text-[8px] text-[#086000] rounded-full mb-[10px] flex items-center justify-center"
-          >
-            <a href="#service">3</a>
-          </li>
-          <li
-            class="bg-[#086000] w-[12px] h-[12px] text-[8px] text-[#086000] rounded-full mb-[10px] flex items-center justify-center"
-          >
-            <a href="#portfolio">4</a>
-          </li>
-          <li
-            class="bg-[#086000] w-[12px] h-[12px] text-[8px] text-[#086000] rounded-full mb-[10px] flex items-center justify-center"
-          >
-            <a href="#blog">5</a>
-          </li>
-          <li
-            class="bg-[#086000] w-[12px] h-[12px] text-[8px] text-[#086000] rounded-full flex items-center justify-center"
-          >
-            <a href="#contact">6</a>
-          </li>
-        </ul>
-        <ul class="social">
-          <li
-            class="w-[30px] h-[30px] rounded-full border border-white hover:border-[#086000] flex justify-center items-center duration-200"
-          >
-            <a
-              href="#"
-              class="bx bxl-facebook text-white hover:text-[#086000] duration-200"
-            ></a>
-          </li>
-          <li
-            class="w-[30px] h-[30px] rounded-full border border-white hover:border-[#086000] flex justify-center items-center duration-200 mt-3"
-          >
-            <a
-              href="#"
-              class="bx bxl-instagram text-white hover:text-[#086000] duration-200"
-            ></a>
-          </li>
-          <li
-            class="w-[30px] h-[30px] rounded-full border border-white hover:border-[#086000] flex justify-center items-center duration-200 mt-3"
-          >
-            <a
-              href="#"
-              class="bx bxl-twitter text-white hover:text-[#086000] duration-200"
-            ></a>
-          </li>
-        </ul>
-      </aside>
-
-      <h1
-        class="title fixed top-[340px] -right-[220px] text-6xl uppercase font-bold rotate-90 text-[#F8F8F8]"
-      >
-        HomeDev AGENCY
-      </h1>
-
-      <div
-        class="circle w-[343px] h-[343px] bg-[#1FEBB0] fixed -right-[8%] -bottom-[20%] rounded-full"
-      ></div>
-
-      <div class="container w-[85%] h-[80vh] z-10">
-        <div class="h-full overflow-hidden scroll-smooth">
-          <!-- Intro section -->
-          <section id="intro" class="h-full flex items-center">
-            <div class="w-[55%]">
-              <h1 class="font-bold text-5xl mb-36 leading-[70px]">
-                HomeDev - Creating a Better IT Solutions.
-              </h1>
-              <button
-                class="order-btn py-[10px] px-9 rounded-3xl bg-[#00B533] text-white text-xl hover:bg-[#00b503] duration-200"
-              >
-                Place an order
-              </button>
-            </div>
-            <div class="w-[45%]">
-              <img
-                src="./images/netbook.png"
-                alt="netbook"
-                class="w-[446px] rotate-[-5deg] scale-105 ml-auto"
-              />
-            </div>
-          </section>
-
-          <!-- About section -->
-          <section id="about" class="h-full pt-4">
-            <div class="about__title text-center">
-              <h2 class="font-bold text-5xl mb-8 max-w-[738px] mx-auto">
-                Who are we?
-              </h2>
-              <p
-                class="text-2xl leading-8 text-[#00282F] font-[500] max-w-[738px] mx-auto"
-              >
-                Serius Academy - осуществляющая поддержку бизнеса клиентов на
-                долгосрочной основе: IT-консалтинг, брендинговые технологии,
-                дизайнерские решения, разработка и сопровождение
-                интернет-проектов, интернет-маркетинг, дизайн и разработка
-                сайтов, а также их поддержка и развитие.
-              </p>
-            </div>
-            <div class="flex justify-center mt-16">
-              <div class="max-w-[140px] flex mx-10 flex-col items-center">
-                <div
-                  class="about-circle w-[120px] h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
-                >
-                  <span class="text-4xl text-[#00282F] font-[500]">5</span>
-                </div>
-                <p
-                  class="text-xl text-center leading-8 text-[#00282F] font-[500] mt-7"
-                >
-                  Yillik tajriba
-                </p>
-              </div>
-              <div class="max-w-[140px] flex mx-10 flex-col items-center">
-                <div
-                  class="about-circle w-[120px] h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
-                >
-                  <span class="text-4xl text-[#00282F] font-[500]">10+</span>
-                </div>
-                <p
-                  class="text-xl text-center leading-8 text-[#00282F] font-[500] mt-7"
-                >
-                  professional dasturchilar
-                </p>
-              </div>
-              <div class="max-w-[140px] flex mx-10 flex-col items-center">
-                <div
-                  class="about-circle w-[120px] h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
-                >
-                  <span class="text-4xl text-[#00282F] font-[500]">100%</span>
-                </div>
-                <p
-                  class="text-xl text-center leading-8 text-[#00282F] font-[500] mt-7"
-                >
-                  sifat kafolati
-                </p>
-              </div>
-              <div class="max-w-[140px] flex mx-10 flex-col items-center">
-                <div
-                  class="about-circle w-[120px] h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
-                >
-                  <span class="text-4xl text-[#00282F] font-[500]">15+</span>
-                </div>
-                <p
-                  class="text-xl text-center leading-8 text-[#00282F] font-[500] mt-7"
-                >
-                  loyihalar
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <!-- Services section -->
-          <section id="service" class="service h-full pt-4 relative">
-            <h2 class="font-bold text-5xl mb-20 text-center">Our services</h2>
-
-            <div class="service__carousel owl-carousel max-w-[350px] mx-auto">
-              <div class="service__carousel--item text-center">
-                <h3 class="text-2xl mb-5 font-medium">Website development</h3>
-                <p
-                  class="text-lg leading-6 text-[#00282F] h-[205px] overflow-hidden"
-                >
-                  Качественный сайт – это основа продвижения Вашего бизнеса в
-                  интернете. Он создаёт имидж компании и увеличивает Ваши
-                  продажи 24/7. Мы сделаем для Вас рабочий инструмент, который
-                  значительно поможет в развитии бизнеса.
-                </p>
-              </div>
-              <div class="service__carousel--item text-center">
-                <h3 class="text-2xl mb-5 font-medium">Microservices</h3>
-                <p
-                  class="text-lg leading-6 text-[#00282F] h-[205px] overflow-hidden"
-                >
-                  Качественный сайт – это основа продвижения Вашего бизнеса в
-                  интернете. Он создаёт имидж компании и увеличивает Ваши
-                  продажи 24/7. Мы сделаем для Вас рабочий инструмент, который
-                  значительно поможет в развитии бизнеса.
-                </p>
-              </div>
-              <div class="service__carousel--item text-center">
-                <h3 class="text-2xl mb-5 font-medium">Mobile App</h3>
-                <p
-                  class="text-lg leading-6 text-[#00282F] h-[205px] overflow-hidden"
-                >
-                  Качественный сайт – это основа продвижения Вашего бизнеса в
-                  интернете. Он создаёт имидж компании и увеличивает Ваши
-                  продажи 24/7. Мы сделаем для Вас рабочий инструмент, который
-                  значительно поможет в развитии бизнеса.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="left-section w-[454px] h-[454px] rounded-full border border-[#1FEBB0] absolute top-1/2 -left-1/2 -translate-y-1/2 translate-x-2/3"
+            </h2>
+          </a>
+          <div class="header__btns flex font-semibold">
+            <button
+              class="order-btn py-[10px] px-9 rounded-3xl bg-[#00B533] text-white text-xl hover:bg-[#00b503] duration-200"
             >
-              <div
-                class="left-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute right-[15%] -top-[5%] duration-150"
-              >
-                <img
-                  src="./images/service-icon1.png"
-                  alt="service-icon"
-                  class="w-8"
-                />
-              </div>
-              <div
-                class="left-section__item active w-[100px] h-[100px] rounded-full border border-[#1FEBB0] flex items-center justify-center absolute -right-[8%] top-[20%] duration-150"
-              >
-                <img
-                  src="./images/service-icon2.png"
-                  alt="service-icon"
-                  class="w-9"
-                />
-              </div>
-              <div
-                class="left-section__item w-[100px] h-[100px] rounded-full border border-[#1FEBB0] bg-white flex items-center justify-center absolute -right-[8%] bottom-[20%] duration-150"
-              >
-                <img
-                  src="./images/service-icon3.png"
-                  alt="service-icon"
-                  class="w-10"
-                />
-              </div>
-              <div
-                class="left-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute right-[15%] -bottom-[5%] duration-150"
-              >
-                <img
-                  src="./images/service-icon4.png"
-                  alt="service-icon"
-                  class="w-6"
-                />
-              </div>
-            </div>
-
+              Place an order
+            </button>
             <div
-              class="right-section w-[454px] h-[454px] rounded-full border border-[#1FEBB0] absolute top-1/2 -right-1/2 -translate-y-1/2 -translate-x-2/3"
+              class="menu-btn nav-menu flex items-center ml-[138px] cursor-pointer relative"
             >
-              <div
-                class="right-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute left-[15%] -top-[5%] duration-150"
-              >
-                <img
-                  src="./images/service-icon4.png"
-                  alt="service-icon"
-                  class="w-6"
-                />
-              </div>
-              <div
-                class="right-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute -left-[8%] top-[20%] duration-150"
-              >
-                <img
-                  src="./images/service-icon3.png"
-                  alt="service-icon"
-                  class="w-10"
-                />
-              </div>
-              <div
-                class="right-section__item w-[100px] h-[100px] rounded-full border border-[#1FEBB0] bg-white flex items-center justify-center absolute -left-[8%] bottom-[20%] duration-150"
-              >
-                <img
-                  src="./images/service-icon2.png"
-                  alt="service-icon"
-                  class="w-9"
-                />
-              </div>
-              <div
-                class="right-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute left-[15%] -bottom-[5%] duration-150"
-              >
-                <img
-                  src="./images/service-icon1.png"
-                  alt="service-icon"
-                  class="w-8"
-                />
-              </div>
-            </div>
-          </section>
-
-          <!-- Portfolio section -->
-          <section id="portfolio" class="portfolio h-full pt-4">
-            <h2 class="font-bold text-5xl mb-11 text-center">Our Works</h2>
-            <div class="relative">
-              <div class="flex items-center justify-center relative z-10">
-                <div class="w-[150px] h-[297px] ml-[75px] relative">
-                  <img
-                    src="./images/phone.png"
-                    alt="phone"
-                    class="w-full h-full absolute top-0 left-0 z-10"
-                  />
-                  <img
-                    src="./images/site-mobile.png"
-                    alt="site-mobile"
-                    class="absolute top-3 left-[11%] w-[120px] h-[270px] rounded-2xl"
-                  />
-                </div>
-                <div class="w-[581px] h-[362px] ml-[75px] relative">
-                  <img
-                    src="./images/pc.png"
-                    alt="pc"
-                    class="w-full h-full absolute top-0 left-0 z-10"
-                  />
-                  <img
-                    src="./images/site-pc.png"
-                    alt="site-pc"
-                    class="absolute top-4 left-[11%] w-[455px] h-[290px]"
-                  />
-                </div>
-              </div>
-              <p
-                id="work-title"
-                class="text-3xl leading-8 text-[#00282F] font-semibold max-w-[612px] mt-5"
-              >
-                Tomchilab sug’orish tizimi web sahifasi va mobile ilovasi.
-              </p>
-              <img
-                src="./images/bg-adventages 1.png"
-                alt="bg-adventages"
-                class="w-[276px] absolute z-0 right-[7%] -top-[15%]"
-              />
+              <span class="text-2xl">Menu</span>
+              <img src="./images/menu.svg" alt="burger" class="w-[35px] ml-4" />
               <ul
-                class="portfolio-nav bg-[#1FEBB0] p-4 rounded-lg absolute right-0 top-[25%] w-[313px] h-[273px] flex flex-col justify-evenly items-end"
+                class="menuList absolute top-[50px] right-0 z-20 w-[150px] p-4 shadow-lg hidden flex-col bg-white rounded-lg duration-200"
               >
-                <li
-                  class="nav-item text-[#086000] w-9 h-9 rounded-full bg-white flex items-center justify-center"
-                >
-                  01
+                <li class="mb-2">
+                  <a href="#intro" class="hover:text-[#00b533] duration-200"
+                    >Home</a
+                  >
                 </li>
-                <li
-                  class="nav-item text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
-                >
-                  02
+                <li class="mb-2">
+                  <a href="#about" class="hover:text-[#00b533] duration-200"
+                    >About us</a
+                  >
                 </li>
-                <li
-                  class="nav-item text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
-                >
-                  03
+                <li class="mb-2">
+                  <a href="#service" class="hover:text-[#00b533] duration-200"
+                    >Services</a
+                  >
                 </li>
-                <li
-                  class="nav-item text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
-                >
-                  04
+                <li class="mb-2">
+                  <a href="#portfolio" class="hover:text-[#00b533] duration-200"
+                    >Portfolio</a
+                  >
                 </li>
-                <li
-                  class="nav-item text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
-                >
-                  05
+                <li class="mb-2">
+                  <a href="#blog" class="hover:text-[#00b533] duration-200"
+                    >Blog & News</a
+                  >
+                </li>
+                <li class="">
+                  <a href="#contact" class="hover:text-[#00b533] duration-200"
+                    >Contact</a
+                  >
                 </li>
               </ul>
             </div>
-          </section>
-
-          <!-- Blog section -->
-          <section id="blog" class="blog h-full pt-4">
-            <h2 class="font-bold text-5xl mb-11 text-center">Blog & News</h2>
-            <div class="blog__slider owl-carousel">
-              <div class="blog__slider--item flex flex-col items-center">
-                <img
-                  src="./images/5778883 1.png"
-                  alt="card-img"
-                  class="mb-[-100px] relative z-10"
-                  style="width: 90%"
-                />
-                <div
-                  class="card-body bg-[#1FEBB0] py-4 px-5 flex flex-col justify-end h-[230px] rounded-3xl"
-                >
-                  <h3 class="mb-4 text-lg text-[#00282F] uppercase opacity-50">
-                    WEB DESIGN FIGMA XD
-                  </h3>
-                  <p class="text-xl text-[#00282F]">
-                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.
-                  </p>
-                </div>
-              </div>
-              <div class="blog__slider--item flex flex-col items-center">
-                <img
-                  src="./images/5778883 1.png"
-                  alt="card-img"
-                  class="mb-[-100px] relative z-10"
-                  style="width: 90%"
-                />
-                <div
-                  class="card-body bg-[#1FEBB0] py-4 px-5 flex flex-col justify-end h-[230px] rounded-3xl"
-                >
-                  <h3 class="mb-4 text-lg text-[#00282F] uppercase opacity-50">
-                    WEB DESIGN FIGMA XD
-                  </h3>
-                  <p class="text-xl text-[#00282F]">
-                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.
-                  </p>
-                </div>
-              </div>
-              <div class="blog__slider--item flex flex-col items-center">
-                <img
-                  src="./images/5778883 1.png"
-                  alt="card-img"
-                  class="mb-[-100px] relative z-10"
-                  style="width: 90%"
-                />
-                <div
-                  class="card-body bg-[#1FEBB0] py-4 px-5 flex flex-col justify-end h-[230px] rounded-3xl"
-                >
-                  <h3 class="mb-4 text-lg text-[#00282F] uppercase opacity-50">
-                    WEB DESIGN FIGMA XD
-                  </h3>
-                  <p class="text-xl text-[#00282F]">
-                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.
-                  </p>
-                </div>
-              </div>
-              <div class="blog__slider--item flex flex-col items-center">
-                <img
-                  src="./images/5778883 1.png"
-                  alt="card-img"
-                  class="mb-[-100px] relative z-10"
-                  style="width: 90%"
-                />
-                <div
-                  class="card-body bg-[#1FEBB0] py-4 px-5 flex flex-col justify-end h-[230px] rounded-3xl"
-                >
-                  <h3 class="mb-4 text-lg text-[#00282F] uppercase opacity-50">
-                    WEB DESIGN FIGMA XD
-                  </h3>
-                  <p class="text-xl text-[#00282F]">
-                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Contact section -->
-          <section id="contact" class="contact h-full pt-4">
-            <h2 class="font-bold text-5xl mb-11 text-center">Contact us</h2>
-            <div class="flex gap-8">
-              <div class="w-1/2 p-5 bg-white rounded-lg shadow-lg">
-                <form action="#">
-                  <h3 class="text-2xl font-semibold text-[#00282F] mb-4">
-                    Send message
-                  </h3>
-                  <input
-                    type="text"
-                    id="fullname"
-                    class="w-full mb-4 py-2 px-4 placeholder:text-[#00282f63] focus:outline-0 focus:ring focus:ring-green-300 shadow-md rounded-md border border-gray-200"
-                    placeholder="Your fullname"
-                  />
-                  <input
-                    type="email"
-                    id="email"
-                    class="w-full mb-4 py-2 px-4 placeholder:text-[#00282f63] focus:outline-0 focus:ring focus:ring-green-300 shadow-md rounded-md border border-gray-200"
-                    placeholder="Your email address"
-                  />
-                  <input
-                    type="text"
-                    id="phone"
-                    class="w-full mb-4 py-2 px-4 placeholder:text-[#00282f63] focus:outline-0 focus:ring focus:ring-green-300 shadow-md rounded-md border border-gray-200"
-                    placeholder="Your phone number"
-                  />
-                  <textarea
-                    class="w-full resize-none mb-4 h-[80px] py-2 px-4 placeholder:text-[#00282f63] focus:outline-0 focus:ring focus:ring-green-300 shadow-md rounded-md border border-gray-200"
-                    placeholder="Your message"
-                  ></textarea>
-                  <div class="flex justify-end">
-                    <button
-                      class="py-1 px-5 mr-10 rounded-3xl bg-[#00B533] text-white text-base hover:bg-[#00b503] duration-200"
-                      type="submit"
-                    >
-                      Send us
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <iframe
-                class="w-1/2 rounded-lg shadow-lg"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23984.584543480418!2d69.16879367910155!3d41.285514199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba578f4f58d%3A0xd7a2ecf23413b7a0!2sNajot%20Ta&#39;lim%20Chilonzor%20Filial!5e0!3m2!1suz!2s!4v1675778042651!5m2!1suz!2s"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </section>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
+
+    <!-- Sidebar Section -->
+    <aside
+      class="fixed w-[66px] bg-[#00B533] text-white h-[80vh] left-0 top-[90px] rounded-r-[40px] py-12 flex flex-col justify-between items-center"
+    >
+      <a
+        href="#"
+        class="w-[50px] h-[50px] rounded-2xl bg-white flex justify-center items-center text-[#00B533] shadow-md"
+      >
+        <i class="bx bxs-phone text-2xl"></i>
+      </a>
+      <div class="aside-list flex flex-col items-center">
+        <a
+          href="#intro"
+          class="bg-[#086000] w-[20px] h-[20px] text-xs text-white rounded-full mb-[10px] flex items-center justify-center hover:scale-125 duration-100"
+          >1</a
+        >
+        <a
+          href="#about"
+          class="bg-[#086000] w-[12px] h-[12px] text-xs text-[#086000] rounded-full mb-[10px] flex items-center justify-center hover:scale-125 duration-100"
+          >2</a
+        >
+        <a
+          href="#service"
+          class="bg-[#086000] w-[12px] h-[12px] text-xs text-[#086000] rounded-full mb-[10px] flex items-center justify-center hover:scale-125 duration-100"
+          >3</a
+        >
+        <a
+          href="#portfolio"
+          class="bg-[#086000] w-[12px] h-[12px] text-xs text-[#086000] rounded-full mb-[10px] flex items-center justify-center hover:scale-125 duration-100"
+          >4</a
+        >
+        <a
+          href="#blog"
+          class="bg-[#086000] w-[12px] h-[12px] text-xs text-[#086000] rounded-full mb-[10px] flex items-center justify-center hover:scale-125 duration-100"
+          >5</a
+        >
+        <a
+          href="#contact"
+          class="bg-[#086000] w-[12px] h-[12px] text-xs text-[#086000] rounded-full mb-[10px] flex items-center justify-center hover:scale-125 duration-100"
+          >6</a
+        >
+      </div>
+      <ul class="social">
+        <li
+          class="w-[30px] h-[30px] rounded-full border border-white hover:border-[#086000] flex justify-center items-center duration-200"
+        >
+          <a
+            href="#"
+            class="bx bxl-facebook text-white hover:text-[#086000] duration-200"
+          ></a>
+        </li>
+        <li
+          class="w-[30px] h-[30px] rounded-full border border-white hover:border-[#086000] flex justify-center items-center duration-200 mt-3"
+        >
+          <a
+            href="#"
+            class="bx bxl-instagram text-white hover:text-[#086000] duration-200"
+          ></a>
+        </li>
+        <li
+          class="w-[30px] h-[30px] rounded-full border border-white hover:border-[#086000] flex justify-center items-center duration-200 mt-3"
+        >
+          <a
+            href="#"
+            class="bx bxl-twitter text-white hover:text-[#086000] duration-200"
+          ></a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main title -->
+    <h1
+      id="main-title"
+      class="title fixed top-[340px] -right-[220px] text-6xl uppercase font-bold rotate-90 text-[#F8F8F8]"
+    >
+      HomeDev AGENCY
+    </h1>
+
+    <!-- Intro Circle -->
+    <!-- <div
+      class="circle w-[343px] h-[343px] bg-[#1FEBB0] fixed -right-[8%] -bottom-[20%] rounded-full"
+    ></div> -->
+
+    <!-- Intro section -->
+    <section id="intro">
+      <div class="container w-[85%] min-h-[80vh] flex items-center">
+        <div class="w-[55%]">
+          <h1 class="font-bold text-5xl mb-36 leading-[70px]">
+            HomeDev - Creating a Better IT Solutions.
+          </h1>
+          <button
+            class="order-btn py-[10px] px-9 rounded-3xl bg-[#00B533] text-white text-xl hover:bg-[#00b503] duration-200"
+          >
+            Place an order
+          </button>
+        </div>
+        <div class="w-[45%]">
+          <img
+            src="./images/netbook.png"
+            alt="netbook"
+            class="w-[446px] rotate-[-5deg] scale-105 ml-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="pt-4">
+      <div class="container w-[85%] min-h-[80vh] pt-4">
+        <div class="about__title text-center">
+          <h2 class="font-bold text-5xl mb-8 max-w-[738px] mx-auto">
+            Who are we?
+          </h2>
+          <p
+            class="text-2xl leading-8 text-[#00282F] font-[500] max-w-[738px] mx-auto"
+          >
+            HomeDev Academy - Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Saepe nesciunt obcaecati unde eligendi doloremque
+            similique dolore repellendus dolorum eos quo. Saepe nesciunt
+            obcaecati unde eligendi doloremque similique dolorum eos quo.
+          </p>
+        </div>
+        <div class="flex justify-center mt-16">
+          <div class="max-w-[140px] flex mx-10 flex-col items-center">
+            <div
+              class="about-circle w-[120px] h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
+            >
+              <span class="text-4xl text-[#00282F] font-[500]">5</span>
+            </div>
+            <p
+              class="text-xl text-center leading-8 text-[#00282F] font-[500] mt-7"
+            >
+              Yillik tajriba
+            </p>
+          </div>
+          <div class="max-w-[140px] flex mx-10 flex-col items-center">
+            <div
+              class="about-circle w-[120px] h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
+            >
+              <span class="text-4xl text-[#00282F] font-[500]">10+</span>
+            </div>
+            <p
+              class="text-xl text-center leading-8 text-[#00282F] font-[500] mt-7"
+            >
+              professional dasturchilar
+            </p>
+          </div>
+          <div class="max-w-[140px] flex mx-10 flex-col items-center">
+            <div
+              class="about-circle w-[120px] h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
+            >
+              <span class="text-4xl text-[#00282F] font-[500]">100%</span>
+            </div>
+            <p
+              class="text-xl text-center leading-8 text-[#00282F] font-[500] mt-7"
+            >
+              sifat kafolati
+            </p>
+          </div>
+          <div class="max-w-[140px] flex mx-10 flex-col items-center">
+            <div
+              class="about-circle w-[120px] h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
+            >
+              <span class="text-4xl text-[#00282F] font-[500]">15+</span>
+            </div>
+            <p
+              class="text-xl text-center leading-8 text-[#00282F] font-[500] mt-7"
+            >
+              loyihalar
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section id="service" class="service pt-12 overflow-hidden">
+      <div class="container w-[85%] min-h-[80vh] pt-4 relative overflow-hidden">
+        <h2 class="font-bold text-5xl mb-16 text-center">Our services</h2>
+        <div class="service__carousel owl-carousel max-w-[750px] mx-auto">
+          <div
+            class="service__carousel--item flex flex-col items-center text-center border border-gray-400 p-2 rounded-md"
+          >
+            <div class="overflow-hidden w-full h-[150px]">
+              <img
+                src="./images/service-microservices.svg"
+                alt="service"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl mb-2 mt-4 font-medium">Microservices</h3>
+            <p
+              class="text-base leading-6 text-[#00282F] h-[4.7rem] overflow-hidden"
+            >
+              Lorem, ipsum dolor sit amet consectetur sit amet adipisicing elit.
+              Laboriosam delectus necessitatibus.
+            </p>
+          </div>
+          <div
+            class="service__carousel--item flex flex-col items-center text-center border border-gray-400 p-2 rounded-md"
+          >
+            <div class="overflow-hidden w-full h-[150px]">
+              <img
+                src="./images/service-web-design.png"
+                alt="service"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl mb-2 mt-4 font-medium">Web Dev</h3>
+            <p
+              class="text-base leading-6 text-[#00282F] h-[4.7rem] overflow-hidden"
+            >
+              Lorem, ipsum dolor sit amet consectetur sit amet adipisicing elit.
+              Laboriosam delectus necessitatibus.
+            </p>
+          </div>
+          <div
+            class="service__carousel--item flex flex-col items-center text-center border border-gray-400 p-2 rounded-md"
+          >
+            <div class="overflow-hidden w-full h-[150px]">
+              <img
+                src="./images/service-mobile.jpg"
+                alt="service"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl mb-2 mt-4 font-medium">Mobile App</h3>
+            <p
+              class="text-base leading-6 text-[#00282F] h-[4.7rem] overflow-hidden"
+            >
+              Lorem, ipsum dolor sit amet consectetur sit amet adipisicing elit.
+              Laboriosam delectus necessitatibus.
+            </p>
+          </div>
+          <div
+            class="service__carousel--item flex flex-col items-center text-center border border-gray-400 p-2 rounded-md"
+          >
+            <div class="overflow-hidden w-full h-[150px]">
+              <img
+                src="./images/service-microservices.svg"
+                alt="service"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl mb-2 mt-4 font-medium">Microservices</h3>
+            <p
+              class="text-base leading-6 text-[#00282F] h-[4.7rem] overflow-hidden"
+            >
+              Lorem, ipsum dolor sit amet consectetur sit amet adipisicing elit.
+              Laboriosam delectus necessitatibus.
+            </p>
+          </div>
+          <div
+            class="service__carousel--item flex flex-col items-center text-center border border-gray-400 p-2 rounded-md"
+          >
+            <div class="overflow-hidden w-full h-[150px]">
+              <img
+                src="./images/service-web-design.png"
+                alt="service"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl mb-2 mt-4 font-medium">Web Dev</h3>
+            <p
+              class="text-base leading-6 text-[#00282F] h-[4.7rem] overflow-hidden"
+            >
+              Lorem, ipsum dolor sit amet consectetur sit amet adipisicing elit.
+              Laboriosam delectus necessitatibus.
+            </p>
+          </div>
+          <div
+            class="service__carousel--item flex flex-col items-center text-center border border-gray-400 p-2 rounded-md"
+          >
+            <div class="overflow-hidden w-full h-[150px]">
+              <img
+                src="./images/service-mobile.jpg"
+                alt="service"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl mb-2 mt-4 font-medium">Mobile App</h3>
+            <p
+              class="text-base leading-6 text-[#00282F] h-[4.7rem] overflow-hidden"
+            >
+              Lorem, ipsum dolor sit amet consectetur sit amet adipisicing elit.
+              Laboriosam delectus necessitatibus.
+            </p>
+          </div>
+        </div>
+        <div
+          class="left-section w-[454px] h-[454px] rounded-full border border-[#1FEBB0] absolute top-1/2 -left-[45%] -translate-y-1/2 translate-x-2/3"
+        >
+          <div
+            class="left-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute right-[15%] -top-[5%] duration-150"
+          >
+            <img
+              src="./images/service-icon1.png"
+              alt="service-icon"
+              class="w-8"
+            />
+          </div>
+          <div
+            class="left-section__item active w-[100px] h-[100px] rounded-full border border-[#1FEBB0] flex items-center justify-center absolute -right-[8%] top-[20%] duration-150"
+          >
+            <img
+              src="./images/service-icon2.png"
+              alt="service-icon"
+              class="w-9"
+            />
+          </div>
+          <div
+            class="left-section__item w-[100px] h-[100px] rounded-full border border-[#1FEBB0] bg-white flex items-center justify-center absolute -right-[8%] bottom-[20%] duration-150"
+          >
+            <img
+              src="./images/service-icon3.png"
+              alt="service-icon"
+              class="w-10"
+            />
+          </div>
+          <div
+            class="left-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute right-[15%] -bottom-[5%] duration-150"
+          >
+            <img
+              src="./images/service-icon4.png"
+              alt="service-icon"
+              class="w-6"
+            />
+          </div>
+        </div>
+        <div
+          class="right-section w-[454px] h-[454px] rounded-full border border-[#1FEBB0] absolute top-1/2 -right-[45%] -translate-y-1/2 -translate-x-2/3"
+        >
+          <div
+            class="right-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute left-[15%] -top-[5%] duration-150"
+          >
+            <img
+              src="./images/service-icon4.png"
+              alt="service-icon"
+              class="w-6"
+            />
+          </div>
+          <div
+            class="right-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute -left-[8%] top-[20%] duration-150"
+          >
+            <img
+              src="./images/service-icon3.png"
+              alt="service-icon"
+              class="w-10"
+            />
+          </div>
+          <div
+            class="right-section__item w-[100px] h-[100px] rounded-full border border-[#1FEBB0] bg-white flex items-center justify-center absolute -left-[8%] bottom-[20%] duration-150"
+          >
+            <img
+              src="./images/service-icon2.png"
+              alt="service-icon"
+              class="w-9"
+            />
+          </div>
+          <div
+            class="right-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute left-[15%] -bottom-[5%] duration-150"
+          >
+            <img
+              src="./images/service-icon1.png"
+              alt="service-icon"
+              class="w-8"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio section -->
+    <section id="portfolio" class="portfolio h-full pt-16">
+      <div class="container w-[85%] min-h-[80vh] pt-4">
+        <h2 class="font-bold text-5xl mb-16 text-center">Our Works</h2>
+        <div class="relative">
+          <div class="flex items-center justify-center relative z-10">
+            <div class="w-[150px] h-[297px] ml-[75px] relative">
+              <img
+                src="./images/phone.png"
+                alt="phone"
+                class="w-full h-full absolute top-0 left-0 z-10"
+              />
+              <img
+                src="./images/site-mobile.png"
+                alt="site-mobile"
+                class="absolute top-3 left-[11%] w-[120px] h-[270px] rounded-2xl"
+              />
+            </div>
+            <div class="w-[581px] h-[362px] ml-[75px] relative">
+              <img
+                src="./images/pc.png"
+                alt="pc"
+                class="w-full h-full absolute top-0 left-0 z-10"
+              />
+              <img
+                src="./images/site-pc.png"
+                alt="site-pc"
+                class="absolute top-4 left-[11%] w-[455px] h-[290px]"
+              />
+            </div>
+          </div>
+          <div id="work-title" class="max-w-[612px] mt-5">
+            <p class="text-3xl leading-8 text-[#00282F] font-semibold">
+              Tomchilab sug’orish tizimi web ilovasi.
+            </p>
+            <ul class="flex mt-4 text-xl">
+              <li
+                class="w-[35px] h-[35px] hover:bg-[#00B533] hover:border-[#00B533] hover:text-white duration-200 cursor-pointer border border-gray-400 mr-2 rounded-md flex items-center justify-center"
+              >
+                1
+              </li>
+              <li
+                class="w-[35px] h-[35px] hover:bg-[#00B533] hover:border-[#00B533] hover:text-white duration-200 cursor-pointer border border-gray-400 mr-2 rounded-md flex items-center justify-center"
+              >
+                2
+              </li>
+              <li
+                class="w-[35px] h-[35px] hover:bg-[#00B533] hover:border-[#00B533] hover:text-white duration-200 cursor-pointer border border-gray-400 mr-2 rounded-md flex items-center justify-center"
+              >
+                3
+              </li>
+              <li
+                class="w-[35px] h-[35px] hover:bg-[#00B533] hover:border-[#00B533] hover:text-white duration-200 cursor-pointer border border-gray-400 mr-2 rounded-md flex items-center justify-center"
+              >
+                4
+              </li>
+              <li
+                class="w-[35px] h-[35px] hover:bg-[#00B533] hover:border-[#00B533] hover:text-white duration-200 cursor-pointer border border-gray-400 mr-2 rounded-md flex items-center justify-center"
+              >
+                5
+              </li>
+              <li
+                class="w-[35px] h-[35px] hover:bg-[#00B533] hover:border-[#00B533] hover:text-white duration-200 cursor-pointer border border-gray-400 mr-2 rounded-md flex items-center justify-center"
+              >
+                6
+              </li>
+              <li
+                class="w-[35px] h-[35px] hover:bg-[#00B533] hover:border-[#00B533] hover:text-white duration-200 cursor-pointer border border-gray-400 mr-2 rounded-md flex items-center justify-center"
+              >
+                7
+              </li>
+              <li
+                class="w-[35px] h-[35px] hover:bg-[#00B533] hover:border-[#00B533] hover:text-white duration-200 cursor-pointer border border-gray-400 mr-2 rounded-md flex items-center justify-center"
+              >
+                8
+              </li>
+            </ul>
+          </div>
+          <img
+            src="./images/bg-adventages 1.png"
+            alt="bg-adventages"
+            class="w-[276px] absolute z-0 right-[7%] -top-[15%]"
+          />
+          <ul
+            class="portfolio-nav bg-[#1FEBB0] p-4 rounded-lg absolute right-0 top-[25%] w-[313px] h-[273px] flex flex-col justify-evenly items-end"
+          >
+            <li
+              class="nav-item text-[#086000] w-9 h-9 rounded-full bg-white flex items-center justify-center"
+            >
+              01
+            </li>
+            <li
+              class="nav-item text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
+            >
+              02
+            </li>
+            <li
+              class="nav-item text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
+            >
+              03
+            </li>
+            <li
+              class="nav-item text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
+            >
+              04
+            </li>
+            <li
+              class="nav-item text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
+            >
+              05
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog section -->
+    <section id="blog" class="blog h-full pt-16">
+      <div class="container w-[85%] min-h-[80vh] pt-4">
+        <h2 class="font-bold text-5xl mb-16 text-center">Blog & News</h2>
+        <div class="blog__slider owl-carousel">
+          <div class="blog__slider--item flex flex-col items-center">
+            <img
+              src="./images/5778883 1.png"
+              alt="card-img"
+              class="mb-[-100px] relative z-10"
+              style="width: 90%"
+            />
+            <div
+              class="card-body bg-[#1FEBB0] py-4 px-5 flex flex-col justify-end h-[230px] rounded-3xl"
+            >
+              <h3 class="mb-4 text-lg text-[#00282F] uppercase opacity-50">
+                WEB DESIGN FIGMA XD
+              </h3>
+              <p class="text-xl text-[#00282F]">
+                Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+          <div class="blog__slider--item flex flex-col items-center">
+            <img
+              src="./images/5778883 1.png"
+              alt="card-img"
+              class="mb-[-100px] relative z-10"
+              style="width: 90%"
+            />
+            <div
+              class="card-body bg-[#1FEBB0] py-4 px-5 flex flex-col justify-end h-[230px] rounded-3xl"
+            >
+              <h3 class="mb-4 text-lg text-[#00282F] uppercase opacity-50">
+                WEB DESIGN FIGMA XD
+              </h3>
+              <p class="text-xl text-[#00282F]">
+                Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+          <div class="blog__slider--item flex flex-col items-center">
+            <img
+              src="./images/5778883 1.png"
+              alt="card-img"
+              class="mb-[-100px] relative z-10"
+              style="width: 90%"
+            />
+            <div
+              class="card-body bg-[#1FEBB0] py-4 px-5 flex flex-col justify-end h-[230px] rounded-3xl"
+            >
+              <h3 class="mb-4 text-lg text-[#00282F] uppercase opacity-50">
+                WEB DESIGN FIGMA XD
+              </h3>
+              <p class="text-xl text-[#00282F]">
+                Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+          <div class="blog__slider--item flex flex-col items-center">
+            <img
+              src="./images/5778883 1.png"
+              alt="card-img"
+              class="mb-[-100px] relative z-10"
+              style="width: 90%"
+            />
+            <div
+              class="card-body bg-[#1FEBB0] py-4 px-5 flex flex-col justify-end h-[230px] rounded-3xl"
+            >
+              <h3 class="mb-4 text-lg text-[#00282F] uppercase opacity-50">
+                WEB DESIGN FIGMA XD
+              </h3>
+              <p class="text-xl text-[#00282F]">
+                Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact h-full pt-12">
+      <div class="container w-[85%] min-h-[80vh] pt-4">
+        <h2 class="font-bold text-5xl mb-16 text-center">Contact us</h2>
+        <div class="flex gap-8">
+          <div class="w-1/2 p-5 bg-white rounded-lg shadow-lg">
+            <form action="#">
+              <h3 class="text-2xl font-semibold text-[#00282F] mb-4">
+                Send message
+              </h3>
+              <input
+                type="text"
+                id="fullname"
+                class="w-full mb-4 py-2 px-4 placeholder:text-[#00282f63] focus:outline-0 focus:ring focus:ring-green-300 shadow-md rounded-md border border-gray-200"
+                placeholder="Your fullname"
+              />
+              <input
+                type="email"
+                id="email"
+                class="w-full mb-4 py-2 px-4 placeholder:text-[#00282f63] focus:outline-0 focus:ring focus:ring-green-300 shadow-md rounded-md border border-gray-200"
+                placeholder="Your email address"
+              />
+              <input
+                type="text"
+                id="phone"
+                class="w-full mb-4 py-2 px-4 placeholder:text-[#00282f63] focus:outline-0 focus:ring focus:ring-green-300 shadow-md rounded-md border border-gray-200"
+                placeholder="Your phone number"
+              />
+              <textarea
+                class="w-full resize-none mb-4 h-[80px] py-2 px-4 placeholder:text-[#00282f63] focus:outline-0 focus:ring focus:ring-green-300 shadow-md rounded-md border border-gray-200"
+                placeholder="Your message"
+              ></textarea>
+              <div class="flex justify-end">
+                <button
+                  class="py-1 px-5 mr-10 rounded-3xl bg-[#00B533] text-white text-base hover:bg-[#00b503] duration-200"
+                  type="submit"
+                >
+                  Send us
+                </button>
+              </div>
+            </form>
+          </div>
+          <iframe
+            class="w-1/2 rounded-lg shadow-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23984.584543480418!2d69.16879367910155!3d41.285514199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba578f4f58d%3A0xd7a2ecf23413b7a0!2sNajot%20Ta&#39;lim%20Chilonzor%20Filial!5e0!3m2!1suz!2s!4v1675778042651!5m2!1suz!2s"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
 
     <!-- script files -->
     <script

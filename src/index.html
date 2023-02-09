@@ -35,30 +35,34 @@
     <!-- main css -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body class="bg-[#f8f8f8] overflow-x-hidden">
+  <body class="bg-[#f8f8f8]">
     <!-- Header Section -->
     <header class="header py-8">
       <div class="container">
         <div class="flex items-center justify-between">
           <a href="#intro" class="logo">
             <h2 class="flex items-baseline">
-              <img src="./images/homedev.png" alt="logo" class="w-14" />
-              <span class="text-[#00B533] text-5xl font-bold ml-2"
+              <img src="./images/homedev.png" alt="logo" class="w-11 xl:w-14" />
+              <span class="text-[#00B533] font-bold ml-2 text-4xl xl:text-5xl"
                 >HomeDev</span
               >
             </h2>
           </a>
           <div class="header__btns flex font-semibold">
             <button
-              class="order-btn py-[10px] px-9 rounded-3xl bg-[#00B533] text-white text-xl hover:bg-[#00b503] duration-200"
+              class="order-btn bg-[#00B533] rounded-3xl hover:bg-[#00b503] duration-200 text-white py-[7px] px-7 text-lg hidden lg:block xl:py-[10px] xl:px-9 xl:text-xl"
             >
               Place an order
             </button>
             <div
-              class="menu-btn nav-menu flex items-center ml-[138px] cursor-pointer relative"
+              class="menu-btn nav-menu cursor-pointer relative flex items-center ml-[90px] xl:ml-[138px]"
             >
               <span class="text-2xl">Menu</span>
-              <img src="./images/menu.svg" alt="burger" class="w-[35px] ml-4" />
+              <img
+                src="./images/menu.svg"
+                alt="burger"
+                class="w-[30px] lg:w-[35px] ml-4"
+              />
               <ul
                 class="menuList absolute top-[50px] right-0 z-20 w-[150px] p-4 shadow-lg hidden flex-col bg-white rounded-lg duration-200"
               >
@@ -101,7 +105,7 @@
 
     <!-- Sidebar Section -->
     <aside
-      class="fixed w-[66px] bg-[#00B533] text-white h-[80vh] left-0 top-[90px] rounded-r-[40px] py-12 flex flex-col justify-between items-center"
+      class="fixed w-[66px] bg-[#00B533] text-white h-[80vh] left-0 top-[90px] rounded-r-[40px] py-12 flex-col justify-between items-center hidden md:flex"
     >
       <a
         href="#"
@@ -169,49 +173,90 @@
       </ul>
     </aside>
 
+    <aside
+      class="fixed bg-[#00B533] text-white w-[90%] left-1/2 -translate-x-1/2 bottom-0 rounded-t-[40px] py-4 flex justify-center z-30 md:hidden"
+    >
+      <div class="aside-list flex items-center">
+        <a
+          href="#intro"
+          class="bg-[#086000] w-[20px] h-[20px] text-xs text-white rounded-full mx-2 flex items-center justify-center"
+          >1</a
+        >
+        <a
+          href="#about"
+          class="bg-[#086000] w-[12px] h-[12px] text-xs text-[#086000] rounded-full mx-2 flex items-center justify-center"
+          >2</a
+        >
+        <a
+          href="#service"
+          class="bg-[#086000] w-[12px] h-[12px] text-xs text-[#086000] rounded-full mx-2 flex items-center justify-center"
+          >3</a
+        >
+        <a
+          href="#portfolio"
+          class="bg-[#086000] w-[12px] h-[12px] text-xs text-[#086000] rounded-full mx-2 flex items-center justify-center"
+          >4</a
+        >
+        <a
+          href="#blog"
+          class="bg-[#086000] w-[12px] h-[12px] text-xs text-[#086000] rounded-full mx-2 flex items-center justify-center"
+          >5</a
+        >
+        <a
+          href="#contact"
+          class="bg-[#086000] w-[12px] h-[12px] text-xs text-[#086000] rounded-full mx-2 flex items-center justify-center"
+          >6</a
+        >
+      </div>
+    </aside>
+
     <!-- Main title -->
     <h1
       id="main-title"
-      class="title fixed top-[340px] -right-[220px] text-6xl uppercase font-bold rotate-90 text-[#F8F8F8]"
+      class="title absolute top-[15%] right-0 text-5xl lg:text-6xl uppercase font-bold z-30 text-center"
     >
       HomeDev AGENCY
     </h1>
 
     <!-- Intro Circle -->
-    <div
+    <!-- <div
       class="circle w-[343px] h-[343px] bg-[#1FEBB0] fixed -right-[8%] -bottom-[20%] rounded-full"
-    ></div>
+    ></div> -->
 
     <!-- Intro section -->
-    <section id="intro" class="py-20">
-      <div class="container w-[85%] flex items-center">
-        <div class="w-[55%] relative">
-          <h1 class="font-bold text-5xl mb-36 leading-[70px]">
+    <section id="intro" class="pb-16 md:py-20">
+      <div
+        class="container w-[85%] flex flex-col-reverse flex-wrap md:flex-nowrap md:flex-row items-center"
+      >
+        <div class="w-full md:w-[55%] relative border border-red-500">
+          <h1
+            class="font-bold mb-28 leading-[45px] text-[30px] text-center md:text-left md:leading-[50px] md:text-[35px] lg:mb-36 lg:leading-[60px] lg:text-[42px] xl:text-5xl xl:leading-[70px]"
+          >
             HomeDev - Creating a Better IT Solutions.
           </h1>
           <button
-            class="order-btn py-[10px] px-9 rounded-3xl bg-[#00B533] text-white text-xl hover:bg-[#00b503] duration-200"
+            class="order-btn py-[10px] px-9 rounded-3xl bg-[#00B533] text-white text-xl hover:bg-[#00b503] duration-200 mx-auto block md:mx-0"
           >
             Place an order
           </button>
           <img
             src="./images/bg-adventages 1.png"
             alt="bg-adventages"
-            class="absolute right-0 -top-5 -z-10 w-[200px]"
+            class="absolute right-0 -top-5 -z-10 w-[200px] hidden md:block"
           />
         </div>
-        <div class="w-[45%]">
+        <div class="w-full md:w-[45%] border border-red-500">
           <img
             src="./images/netbook.png"
             alt="netbook"
-            class="w-[446px] rotate-[-5deg] scale-105 ml-auto"
+            class="w-full md:w-[446px] rotate-[-5deg] md:scale-110 md:ml-auto lg:scale-105"
           />
         </div>
       </div>
     </section>
 
     <!-- About section -->
-    <section id="about" class="pt-4">
+    <!-- <section id="about" class="pt-4">
       <div class="container w-[85%] min-h-[80vh] pt-4">
         <div class="about__title text-center">
           <h2 class="font-bold text-5xl mb-8 max-w-[738px] mx-auto">
@@ -277,7 +322,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Services section -->
     <!-- <section id="service" class="service pt-12 overflow-hidden">

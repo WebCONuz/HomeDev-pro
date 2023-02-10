@@ -37,13 +37,18 @@
   </head>
   <body class="bg-[#f8f8f8]">
     <!-- Header Section -->
-    <header class="header py-8">
+    <header class="header my-4 sm:my-6 md:py-8">
       <div class="container">
-        <div class="flex items-center justify-between">
+        <div class="flex items-baseline sm:items-center justify-between">
           <a href="#intro" class="logo">
             <h2 class="flex items-baseline">
-              <img src="./images/homedev.png" alt="logo" class="w-11 xl:w-14" />
-              <span class="text-[#00B533] font-bold ml-2 text-4xl xl:text-5xl"
+              <img
+                src="./images/homedev.png"
+                alt="logo"
+                class="w-[37px] sm:w-[37px] md:w-11 xl:w-14"
+              />
+              <span
+                class="text-[#00B533] font-bold hidden sm:block sm:ml-2 text-2xl sm:text-3xl md:text-4xl xl:text-5xl"
                 >HomeDev</span
               >
             </h2>
@@ -55,13 +60,13 @@
               Place an order
             </button>
             <div
-              class="menu-btn nav-menu cursor-pointer relative flex items-center ml-[90px] xl:ml-[138px]"
+              class="menu-btn nav-menu cursor-pointer relative flex items-baseline sm:items-center lg:ml-[90px] xl:ml-[138px]"
             >
-              <span class="text-2xl">Menu</span>
+              <span class="text-xl sm:text-[22px] md:text-2xl">Menu</span>
               <img
                 src="./images/menu.svg"
                 alt="burger"
-                class="w-[30px] lg:w-[35px] ml-4"
+                class="w-[25px] md:w-[30px] lg:w-[35px] ml-4"
               />
               <ul
                 class="menuList absolute top-[50px] right-0 z-20 w-[150px] p-4 shadow-lg hidden flex-col bg-white rounded-lg duration-200"
@@ -211,12 +216,12 @@
     </aside>
 
     <!-- Main title -->
-    <h1
+    <!-- <h1
       id="main-title"
       class="title absolute top-[15%] right-0 text-5xl lg:text-6xl uppercase font-bold z-30 text-center"
     >
       HomeDev AGENCY
-    </h1>
+    </h1> -->
 
     <!-- Intro Circle -->
     <!-- <div
@@ -226,7 +231,7 @@
     <!-- Intro section -->
     <section id="intro" class="pb-16 md:py-20">
       <div
-        class="container w-[85%] flex flex-col-reverse flex-wrap md:flex-nowrap md:flex-row items-center"
+        class="container w-[85%] flex flex-col-reverse flex-wrap md:flex-nowrap md:flex-row items-center border border-green-500"
       >
         <div class="w-full md:w-[55%] relative border border-red-500">
           <h1

@@ -6,15 +6,14 @@ window.addEventListener("DOMContentLoaded", function () {
   const circle = document.querySelector(".circle");
   if (window.scrollY > 0) {
     header.classList.add("bg-white", "active");
-    circle.classList.remove("hidden");
+    circle.classList.add("hidden", "-z-20");
   }
   window.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
       header.classList.add("bg-white", "active");
-      circle.classList.add("hidden");
+      circle.classList.add("hidden", "-z-20");
     } else {
       header.classList.remove("bg-white", "active");
-      circle.classList.remove("hidden");
     }
   });
 
@@ -81,8 +80,11 @@ window.addEventListener("DOMContentLoaded", function () {
       640: {
         items: 2,
       },
+      768: {
+        item: 3,
+      },
       1024: {
-        items: 3,
+        items: 4,
       },
     },
   });

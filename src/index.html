@@ -37,7 +37,9 @@
   </head>
   <body class="bg-[#f8f8f8]">
     <!-- Header Section -->
-    <header class="header py-4 sm:py-6 md:py-7 lg:py-8">
+    <header
+      class="header py-4 sm:py-6 md:py-7 lg:py-8 w-full sticky top-0 left-0 z-10 duration-200"
+    >
       <div class="container">
         <div class="flex items-baseline sm:items-center justify-between">
           <a href="#intro" class="logo">
@@ -110,7 +112,7 @@
 
     <!-- Sidebar Section -->
     <aside
-      class="fixed w-[53px] lg:w-[60px] xl:w-[66px] bg-[#00B533] text-white h-[80vh] left-0 top-[90px] rounded-r-[40px] py-12 flex-col justify-between items-center hidden md:flex"
+      class="fixed z-20 w-[53px] lg:w-[60px] xl:w-[66px] bg-[#00B533] text-white h-[80vh] left-0 top-[90px] rounded-r-[40px] py-12 flex-col justify-between items-center hidden md:flex"
     >
       <a
         href="#"
@@ -224,9 +226,9 @@
     </h1> -->
 
     <!-- Intro Circle -->
-    <!-- <div
-      class="circle w-[343px] h-[343px] bg-[#1FEBB0] fixed -right-[8%] -bottom-[20%] rounded-full"
-    ></div> -->
+    <div
+      class="circle w-[343px] h-[343px] bg-[#1FEBB0] fixed -right-[8%] -bottom-[20%] rounded-full duration-200"
+    ></div>
 
     <!-- Intro section -->
     <section id="intro" class="pb-16 md:py-20">
@@ -235,7 +237,7 @@
       >
         <div class="w-full md:w-[55%] relative">
           <h1
-            class="font-bold mb-16 sm:mb-28 leading-[45px] text-[30px] text-center md:text-left md:leading-[50px] md:text-[35px] lg:mb-36 lg:leading-[60px] lg:text-[42px] xl:text-5xl xl:leading-[70px]"
+            class="font-bold mb-16 sm:mb-28 text-center md:text-left lg:mb-36 leading-[45px] text-[30px] md:leading-[50px] md:text-[35px] lg:leading-[60px] lg:text-[42px] xl:text-5xl xl:leading-[70px]"
           >
             HomeDev - Creating a Better IT Solutions.
           </h1>
@@ -266,14 +268,16 @@
     </section>
 
     <!-- About section -->
-    <!-- <section id="about" class="pt-4">
+    <section id="about" class="pb-16 lg:pt-4 lg:pb-0">
       <div class="container w-[85%] min-h-[80vh] pt-4">
         <div class="about__title text-center">
-          <h2 class="font-bold text-5xl mb-8 max-w-[738px] mx-auto">
+          <h2
+            class="font-bold mb-4 lg:mb-6 xl:mb-8 max-w-[738px] mx-auto leading-[45px] text-[30px] md:leading-[50px] md:text-[35px] lg:leading-[60px] lg:text-[42px] xl:text-5xl xl:leading-[70px]"
+          >
             Who are we?
           </h2>
           <p
-            class="text-2xl leading-8 text-[#00282F] font-[500] max-w-[738px] mx-auto"
+            class="text-[#00282F] font-[500] max-w-[738px] mx-auto md:text-xl md:leading-7 lg:text-2xl lg:leading-8"
           >
             HomeDev Academy - Lorem ipsum dolor sit amet, consectetur
             adipisicing elit. Saepe nesciunt obcaecati unde eligendi doloremque
@@ -281,58 +285,80 @@
             obcaecati unde eligendi doloremque similique dolorum eos quo.
           </p>
         </div>
-        <div class="flex justify-center mt-16">
-          <div class="max-w-[140px] flex mx-10 flex-col items-center">
+        <div
+          class="flex lg:justify-center flex-wrap lg:flex-nowrap mt-8 sm:mt-12 md:mt-16"
+        >
+          <div
+            class="w-[50%] lg:max-w-[140px] flex mb-8 lg:mx-10 flex-col items-center"
+          >
             <div
-              class="about-circle w-[120px] h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
+              class="about-circle w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
             >
-              <span class="text-4xl text-[#00282F] font-[500]">5</span>
+              <span
+                class="text-2xl sm:text-3xl md:text-4xl text-[#00282F] font-[500]"
+                >5</span
+              >
             </div>
             <p
-              class="text-xl text-center leading-8 text-[#00282F] font-[500] mt-7"
+              class="text-sm sm:text-base md:text-xl text-center leading-6 md:leading-8 text-[#00282F] font-[500] mt-3 sm:mt-5 lg:mt-7"
             >
               Yillik tajriba
             </p>
           </div>
-          <div class="max-w-[140px] flex mx-10 flex-col items-center">
+          <div
+            class="w-[50%] lg:max-w-[140px] flex mb-8 lg:mx-10 flex-col items-center"
+          >
             <div
-              class="about-circle w-[120px] h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
+              class="about-circle w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
             >
-              <span class="text-4xl text-[#00282F] font-[500]">10+</span>
+              <span
+                class="text-2xl sm:text-3xl md:text-4xl text-[#00282F] font-[500]"
+                >10+</span
+              >
             </div>
             <p
-              class="text-xl text-center leading-8 text-[#00282F] font-[500] mt-7"
+              class="text-sm sm:text-base md:text-xl text-center leading-6 md:leading-8 text-[#00282F] font-[500] mt-3 sm:mt-5 lg:mt-7"
             >
-              professional dasturchilar
+              Professional dasturchilar
             </p>
           </div>
-          <div class="max-w-[140px] flex mx-10 flex-col items-center">
+          <div
+            class="w-[50%] lg:max-w-[140px] flex lg:mx-10 flex-col items-center"
+          >
             <div
-              class="about-circle w-[120px] h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
+              class="about-circle w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
             >
-              <span class="text-4xl text-[#00282F] font-[500]">100%</span>
+              <span
+                class="text-2xl sm:text-3xl md:text-4xl text-[#00282F] font-[500]"
+                >100%</span
+              >
             </div>
             <p
-              class="text-xl text-center leading-8 text-[#00282F] font-[500] mt-7"
+              class="text-sm sm:text-base md:text-xl text-center leading-6 md:leading-8 text-[#00282F] font-[500] mt-3 sm:mt-5 lg:mt-7"
             >
-              sifat kafolati
+              Sifat kafolati
             </p>
           </div>
-          <div class="max-w-[140px] flex mx-10 flex-col items-center">
+          <div
+            class="w-[50%] lg:max-w-[140px] flex lg:mx-10 flex-col items-center"
+          >
             <div
-              class="about-circle w-[120px] h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
+              class="about-circle w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] bg-[#1FEBB0] flex items-center justify-center rounded-full"
             >
-              <span class="text-4xl text-[#00282F] font-[500]">15+</span>
+              <span
+                class="text-2xl sm:text-3xl md:text-4xl text-[#00282F] font-[500]"
+                >15+</span
+              >
             </div>
             <p
-              class="text-xl text-center leading-8 text-[#00282F] font-[500] mt-7"
+              class="text-sm sm:text-base md:text-xl text-center leading-6 md:leading-8 text-[#00282F] font-[500] mt-3 sm:mt-5 lg:mt-7"
             >
-              loyihalar
+              Loyihalar
             </p>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- Services section -->
     <!-- <section id="service" class="service pt-12 overflow-hidden">

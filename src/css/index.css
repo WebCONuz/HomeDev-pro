@@ -7,9 +7,8 @@ body {
   z-index: 2;
   -webkit-text-fill-color: transparent;
   /* -webkit-text-stroke: rgba(0, 0, 0, 0.3); */
-  -webkit-text-stroke-color: rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.1);
   -webkit-text-stroke-width: 1px;
-  border: 1px solid red;
 }
 
 .header.active {
@@ -28,13 +27,6 @@ body {
 .service__carousel--item img {
   width: 100px !important;
 }
-
-/* .left-section__item:hover,
-.left-section__item.active,
-.right-section__item:hover {
-  box-shadow: 0px 0px 20px #049d2f;
-  background-color: #1febb0;
-} */
 
 /* --------------------------------------------- */
 /* Customer slider ----------------------------- */
@@ -104,20 +96,6 @@ body {
 .owl-nav button.owl-prev {
   right: 35%;
 }
-
-/* Blog carousel */
-/* .blog__slider .owl-dots {
-  bottom: -10%;
-}
-.blog__slider .owl-nav button {
-  bottom: -11%;
-}
-.blog__slider .owl-nav button.owl-prev {
-  right: 35%;
-}
-.blog__slider .owl-nav button.owl-next {
-  left: 35%;
-} */
 
 /* Media Responsive */
 @media screen and (max-width: 1024px) {

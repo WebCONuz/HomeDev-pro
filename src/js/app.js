@@ -57,13 +57,6 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // window.addEventListener("click", function (e) {
-  //   if (e.target.classList.contains("nav-menu")) {
-  //     console.log("++++");
-  //   }
-  //     console.log(e.target);
-  // });
-
   // -----------------------------------------------------------
   // Customer slider -------------------------------------------
   // -----------------------------------------------------------

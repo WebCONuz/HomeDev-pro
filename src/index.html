@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- page title -->
     <title>HomeDev</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/output.css" />
@@ -30,8 +32,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <!-- aos library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- main css -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -218,12 +220,12 @@
     </aside>
 
     <!-- Main title -->
-    <!-- <h1
+    <h1
       id="main-title"
-      class="title absolute top-[15%] right-0 text-5xl lg:text-6xl uppercase font-bold z-30 text-center"
+      class="title fixed top-[50%] -right-[200px] -translate-y-1/2 text-5xl lg:text-6xl uppercase font-bold z-0 text-center rotate-90"
     >
       HomeDev AGENCY
-    </h1> -->
+    </h1>
 
     <!-- Intro Circle -->
     <div
@@ -235,7 +237,11 @@
       <div
         class="container w-full sm:w-[85%] flex flex-col-reverse flex-wrap md:flex-nowrap md:flex-row items-center"
       >
-        <div class="w-full md:w-[55%] relative">
+        <div
+          class="w-full md:w-[55%] relative"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <h1
             class="font-bold mb-16 sm:mb-28 text-center md:text-left lg:mb-36 leading-[45px] text-[30px] md:leading-[50px] md:text-[35px] lg:leading-[60px] lg:text-[42px] xl:text-5xl xl:leading-[70px]"
           >
@@ -252,7 +258,11 @@
             class="absolute right-0 -top-5 -z-10 w-[200px] hidden md:block"
           />
         </div>
-        <div class="w-full md:w-[45%] relative">
+        <div
+          class="w-full md:w-[45%] relative"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <img
             src="./images/netbook.png"
             alt="netbook"
@@ -269,8 +279,12 @@
 
     <!-- About section -->
     <section id="about" class="py-10 sm:py-16">
-      <div class="container w-full sm:w-[85%] min-h-[80vh] pt-4">
-        <div class="about__title text-center">
+      <div class="container w-full sm:w-[95%] pt-4">
+        <div
+          class="about__title text-center"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
           <h2
             class="font-bold mb-4 lg:mb-6 xl:mb-8 max-w-[738px] mx-auto leading-[45px] text-[30px] md:leading-[50px] md:text-[35px] lg:leading-[60px] lg:text-[42px] xl:text-5xl xl:leading-[70px]"
           >
@@ -287,6 +301,8 @@
         </div>
         <div
           class="flex lg:justify-center flex-wrap lg:flex-nowrap mt-8 sm:mt-12 md:mt-16"
+          data-aos="fade-up"
+          data-aos-duration="800"
         >
           <div
             class="w-[50%] lg:max-w-[140px] flex mb-8 lg:mx-10 flex-col items-center"
@@ -507,9 +523,9 @@
               />
             </div>
           </div>
-          <div id="work-title" class="w-full mt-5">
+          <div id="work-title" class="w-full mt-5 lg:w-[600px] lg:ml-[15%]">
             <p
-              class="text-[#00282F] font-semibold text-center text-lg sm:text-xl lg:text-left lg:text-2xl xl:text-3xl"
+              class="text-[#00282F] font-semibold text-lg text-center sm:text-xl lg:text-left lg:text-2xl xl:text-3xl"
             >
               Online Ta'lim tizimi web ilovasi.
             </p>
@@ -740,89 +756,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/app.js"></script>
   </body>
 </html>
-
-<!-- border border-blue-500 -->
-
-<!-- <div
-          class="left-section w-[454px] h-[454px] rounded-full border border-[#1FEBB0] absolute top-1/2 -left-[45%] -translate-y-1/2 translate-x-2/3"
-        >
-          <div
-            class="left-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute right-[15%] -top-[5%] duration-150"
-          >
-            <img
-              src="./images/service-icon1.png"
-              alt="service-icon"
-              class="w-8"
-            />
-          </div>
-          <div
-            class="left-section__item active w-[100px] h-[100px] rounded-full border border-[#1FEBB0] flex items-center justify-center absolute -right-[8%] top-[20%] duration-150"
-          >
-            <img
-              src="./images/service-icon2.png"
-              alt="service-icon"
-              class="w-9"
-            />
-          </div>
-          <div
-            class="left-section__item w-[100px] h-[100px] rounded-full border border-[#1FEBB0] bg-white flex items-center justify-center absolute -right-[8%] bottom-[20%] duration-150"
-          >
-            <img
-              src="./images/service-icon3.png"
-              alt="service-icon"
-              class="w-10"
-            />
-          </div>
-          <div
-            class="left-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute right-[15%] -bottom-[5%] duration-150"
-          >
-            <img
-              src="./images/service-icon4.png"
-              alt="service-icon"
-              class="w-6"
-            />
-          </div>
-        </div>
-        <div
-          class="right-section w-[454px] h-[454px] rounded-full border border-[#1FEBB0] absolute top-1/2 -right-[45%] -translate-y-1/2 -translate-x-2/3"
-        >
-          <div
-            class="right-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute left-[15%] -top-[5%] duration-150"
-          >
-            <img
-              src="./images/service-icon4.png"
-              alt="service-icon"
-              class="w-6"
-            />
-          </div>
-          <div
-            class="right-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute -left-[8%] top-[20%] duration-150"
-          >
-            <img
-              src="./images/service-icon3.png"
-              alt="service-icon"
-              class="w-10"
-            />
-          </div>
-          <div
-            class="right-section__item w-[100px] h-[100px] rounded-full border border-[#1FEBB0] bg-white flex items-center justify-center absolute -left-[8%] bottom-[20%] duration-150"
-          >
-            <img
-              src="./images/service-icon2.png"
-              alt="service-icon"
-              class="w-9"
-            />
-          </div>
-          <div
-            class="right-section__item w-[100px] h-[100px] rounded-full bg-white border border-[#1FEBB0] flex items-center justify-center absolute left-[15%] -bottom-[5%] duration-150"
-          >
-            <img
-              src="./images/service-icon1.png"
-              alt="service-icon"
-              class="w-8"
-            />
-          </div>
-        </div> -->

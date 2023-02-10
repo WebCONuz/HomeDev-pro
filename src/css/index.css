@@ -150,3 +150,28 @@ body {
     width: 80px !important;
   }
 }
+@media screen and (max-width: 400px) {
+  #portfolio .phone {
+    width: 58px;
+  }
+  #portfolio .phone .phone_bg {
+    width: 48px;
+    height: 102px;
+  }
+  #portfolio .desctop {
+    width: 260px;
+  }
+  #portfolio .desctop .desctop_bg {
+    width: 205px;
+    height: 130px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #portfolio .desctop {
+    width: 230px;
+  }
+  #portfolio .desctop .desctop_bg {
+    width: 180px;
+    height: 115px;
+  }
+}

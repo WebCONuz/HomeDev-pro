@@ -12,7 +12,7 @@ body {
 }
 
 .header.active {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 

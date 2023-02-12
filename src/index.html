@@ -39,9 +39,7 @@
   </head>
   <body class="bg-[#f8f8f8]">
     <!-- Header Section -->
-    <header
-      class="header py-4 sm:py-6 md:py-7 lg:py-8 w-full sticky top-0 left-0 z-20 duration-200"
-    >
+    <header class="header py-6 w-full sticky top-0 left-0 z-20 duration-200">
       <div class="container">
         <div class="flex items-center sm:items-center justify-between">
           <a href="#intro" class="logo">
@@ -49,59 +47,98 @@
               <img
                 src="./images/homedev.png"
                 alt="logo"
-                class="w-[37px] sm:w-[37px] md:w-11 xl:w-14"
+                class="w-[37px] sm:w-[37px] md:w-8"
               />
               <span
-                class="text-[#00B533] font-bold hidden sm:block sm:ml-2 text-2xl sm:text-3xl md:text-4xl xl:text-5xl"
+                class="text-[#00B533] font-bold hidden sm:block sm:ml-2 text-2xl sm:text-3xl md:text-3xl"
                 >HomeDev</span
               >
             </h2>
           </a>
-          <div class="header__btns flex font-semibold">
-            <button
-              class="order-btn bg-[#00B533] rounded-3xl hover:bg-[#00b503] duration-200 text-white py-[7px] px-7 text-lg hidden lg:block xl:py-[10px] xl:px-9 xl:text-xl"
-            >
-              Place an order
-            </button>
+
+          <div class="header__btns flex items-center font-semibold">
+            <!-- lang -->
+            <div class="lang-btn lang-menu cursor-pointer relative">
+              <div class="lang-element lang-area flex items-center">
+                <span class="lang-element text-xl mr-2" lang-data="en"
+                  >Eng</span
+                >
+                <img
+                  src="./images/eng.png"
+                  alt="lang-flag"
+                  class="lang-element w-6"
+                />
+              </div>
+              <ul
+                class="langList absolute top-[45px] right-0 z-20 w-[100px] p-4 shadow-lg hidden flex-col bg-white rounded-lg duration-200"
+              >
+                <li class="mb-3 flex items-center">
+                  <span class="text-xl mr-2" lang-data="uz">Uzb</span>
+                  <img src="./images/uzb.png" alt="lang-flag" class="w-6" />
+                </li>
+                <li class="mb-3 flex items-center">
+                  <span class="text-xl mr-2" lang-data="ru">Rus</span>
+                  <img src="./images/rus.png" alt="lang-flag" class="w-6" />
+                </li>
+                <li class="flex items-center">
+                  <span class="text-xl mr-2" lang-data="en">Eng</span>
+                  <img src="./images/eng.png" alt="lang-flag" class="w-6" />
+                </li>
+              </ul>
+            </div>
+
+            <!-- menu -->
             <div
-              class="menu-btn nav-menu cursor-pointer relative flex items-baseline sm:items-center lg:ml-[90px] xl:ml-[138px]"
+              class="menu-btn menu-element nav-menu cursor-pointer relative flex items-baseline sm:items-center ml-7"
             >
-              <span class="text-xl sm:text-[22px] md:text-2xl">Menu</span>
+              <span class="menu-element text-xl mr-2">Menu</span>
               <img
                 src="./images/menu.svg"
                 alt="burger"
-                class="w-[25px] md:w-[30px] lg:w-[35px] ml-4"
+                class="menu-element w-6"
               />
               <ul
-                class="menuList absolute top-[50px] right-0 z-20 w-[150px] p-4 shadow-lg hidden flex-col bg-white rounded-lg duration-200"
+                class="menuList absolute top-[50px] right-0 z-20 w-[170px] p-1 shadow-lg hidden flex-col bg-white rounded-lg duration-200"
               >
-                <li class="mb-2">
-                  <a href="#intro" class="hover:text-[#00b533] duration-200"
+                <li class="mb-2 hover:bg-[#00b53335] rounded-md px-3 py-2">
+                  <a
+                    href="#intro"
+                    class="hover:text-[#00b533] duration-200 text-xl"
                     >Home</a
                   >
                 </li>
                 <li class="mb-2">
-                  <a href="#about" class="hover:text-[#00b533] duration-200"
+                  <a
+                    href="#about"
+                    class="hover:text-[#00b533] duration-200 text-xl"
                     >About us</a
                   >
                 </li>
                 <li class="mb-2">
-                  <a href="#service" class="hover:text-[#00b533] duration-200"
+                  <a
+                    href="#service"
+                    class="hover:text-[#00b533] duration-200 text-xl"
                     >Services</a
                   >
                 </li>
                 <li class="mb-2">
-                  <a href="#portfolio" class="hover:text-[#00b533] duration-200"
+                  <a
+                    href="#portfolio"
+                    class="hover:text-[#00b533] duration-200 text-xl"
                     >Portfolio</a
                   >
                 </li>
                 <li class="mb-2">
-                  <a href="#blog" class="hover:text-[#00b533] duration-200"
+                  <a
+                    href="#blog"
+                    class="hover:text-[#00b533] duration-200 text-xl"
                     >Blog & News</a
                   >
                 </li>
                 <li class="">
-                  <a href="#contact" class="hover:text-[#00b533] duration-200"
+                  <a
+                    href="#contact"
+                    class="hover:text-[#00b533] duration-200 text-xl"
                     >Contact</a
                   >
                 </li>

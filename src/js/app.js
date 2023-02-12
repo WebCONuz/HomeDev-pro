@@ -20,16 +20,49 @@ window.addEventListener("DOMContentLoaded", function () {
   // -----------------------------------------------------------
   // Menu & Sidebar --------------------------------------------
   // -----------------------------------------------------------
+  // const langMenu = document.querySelector(".lang-btn");
+  const langList = document.querySelector(".langList");
+  const langArea = document.querySelector(".lang-area");
+  const langListItems = document.querySelectorAll(".langList > li");
+  this.window.addEventListener("click", function (e) {
+    console.log(e.target);
+    if (e.target.classList.contains("lang-element")) {
+      langList.classList.toggle("hidden");
+      langList.classList.toggle("flex");
+    } else {
+      langList.classList.add("hidden");
+      langList.classList.remove("flex");
+    }
+
+    if (e.target.classList.contains("menu-element")) {
+      menuList.classList.toggle("hidden");
+      menuList.classList.toggle("flex");
+    } else {
+      menuList.classList.add("hidden");
+      menuList.classList.remove("flex");
+    }
+  });
+  langListItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      langArea.innerHTML = this.innerHTML;
+      const img = document.querySelector(".lang-area img"),
+        span = document.querySelector(".lang-area span");
+      span.classList.add("lang-element");
+      img.classList.add("lang-element");
+    });
+  });
+  // -----------------------------------------------------------
+  // Menu & Sidebar --------------------------------------------
+  // -----------------------------------------------------------
   const menu = document.querySelector(".menu-btn");
   const menuList = document.querySelector(".menuList");
   const menuItems = document.querySelectorAll(".menuList > li");
   const asideItems = document.querySelectorAll(".aside-list > a");
-  console.log(asideItems);
 
-  menu.addEventListener("click", function (e) {
-    menuList.classList.toggle("hidden");
-    menuList.classList.toggle("flex");
-  });
+  // menu.addEventListener("click", function (e) {
+  //   menuList.classList.toggle("hidden");
+  //   menuList.classList.toggle("flex");
+  // });
 
   menuItems.forEach((item, index) => {
     item.addEventListener("click", function () {

@@ -37,7 +37,7 @@
     <!-- main css -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body class="bg-[#f8f8f8]">
+  <body class="bg-[#f8f8f8] overflow-x-hidden">
     <!-- Header Section -->
     <header class="header py-6 w-full sticky top-0 left-0 z-20 duration-200">
       <div class="container">
@@ -70,18 +70,24 @@
                 />
               </div>
               <ul
-                class="langList absolute top-[45px] right-0 z-20 w-[100px] p-4 shadow-lg hidden flex-col bg-white rounded-lg duration-200"
+                class="langList absolute top-[45px] right-0 z-20 w-[100px] p-1 shadow-lg hidden flex-col bg-white rounded-lg duration-200"
               >
-                <li class="mb-3 flex items-center">
-                  <span class="text-xl mr-2" lang-data="uz">Uzb</span>
+                <li
+                  class="flex items-center hover:text-[#00b533] hover:bg-[#00b53312] duration-200 px-3 py-[6px] rounded-md"
+                >
+                  <span class="text-lg mr-2" lang-data="uz">Uzb</span>
                   <img src="./images/uzb.png" alt="lang-flag" class="w-6" />
                 </li>
-                <li class="mb-3 flex items-center">
-                  <span class="text-xl mr-2" lang-data="ru">Rus</span>
+                <li
+                  class="flex items-center hover:text-[#00b533] hover:bg-[#00b53312] duration-200 px-3 py-[6px] rounded-md"
+                >
+                  <span class="text-lg mr-2" lang-data="ru">Rus</span>
                   <img src="./images/rus.png" alt="lang-flag" class="w-6" />
                 </li>
-                <li class="flex items-center">
-                  <span class="text-xl mr-2" lang-data="en">Eng</span>
+                <li
+                  class="flex items-center hover:text-[#00b533] hover:bg-[#00b53312] duration-200 px-3 py-[6px] rounded-md"
+                >
+                  <span class="text-lg mr-2" lang-data="en">Eng</span>
                   <img src="./images/eng.png" alt="lang-flag" class="w-6" />
                 </li>
               </ul>
@@ -91,54 +97,56 @@
             <div
               class="menu-btn menu-element nav-menu cursor-pointer relative flex items-baseline sm:items-center ml-7"
             >
-              <span class="menu-element text-xl mr-2">Menu</span>
+              <span class="menu-element text-xl mr-2 hidden sm:block"
+                >Menu</span
+              >
               <img
                 src="./images/menu.svg"
                 alt="burger"
                 class="menu-element w-6"
               />
               <ul
-                class="menuList absolute top-[50px] right-0 z-20 w-[170px] p-1 shadow-lg hidden flex-col bg-white rounded-lg duration-200"
+                class="menuList fixed top-[84px] sm:top-[93px] right-0 z-20 w-full p-4 md:p-1 shadow-lg hidden flex-col bg-white rounded-lg duration-200 md:w-[170px] md:absolute md:top-[50px] md:right-0"
               >
-                <li class="mb-2 hover:bg-[#00b53335] rounded-md px-3 py-2">
+                <li>
                   <a
                     href="#intro"
-                    class="hover:text-[#00b533] duration-200 text-xl"
+                    class="hover:text-[#00b533] hover:bg-[#00b53312] duration-200 text-xl px-10 md:px-3 py-4 md:py-2 block rounded-md"
                     >Home</a
                   >
                 </li>
-                <li class="mb-2">
+                <li>
                   <a
                     href="#about"
-                    class="hover:text-[#00b533] duration-200 text-xl"
+                    class="hover:text-[#00b533] hover:bg-[#00b53312] duration-200 text-xl px-10 md:px-3 py-4 md:py-2 block rounded-md"
                     >About us</a
                   >
                 </li>
-                <li class="mb-2">
+                <li>
                   <a
                     href="#service"
-                    class="hover:text-[#00b533] duration-200 text-xl"
+                    class="hover:text-[#00b533] hover:bg-[#00b53312] duration-200 text-xl px-10 md:px-3 py-4 md:py-2 block rounded-md"
                     >Services</a
                   >
                 </li>
-                <li class="mb-2">
+                <li>
                   <a
                     href="#portfolio"
-                    class="hover:text-[#00b533] duration-200 text-xl"
+                    class="hover:text-[#00b533] hover:bg-[#00b53312] duration-200 text-xl px-10 md:px-3 py-4 md:py-2 block rounded-md"
                     >Portfolio</a
                   >
                 </li>
-                <li class="mb-2">
+                <li>
                   <a
                     href="#blog"
-                    class="hover:text-[#00b533] duration-200 text-xl"
+                    class="hover:text-[#00b533] hover:bg-[#00b53312] duration-200 text-xl px-10 md:px-3 py-4 md:py-2 block rounded-md"
                     >Blog & News</a
                   >
                 </li>
-                <li class="">
+                <li>
                   <a
                     href="#contact"
-                    class="hover:text-[#00b533] duration-200 text-xl"
+                    class="hover:text-[#00b533] hover:bg-[#00b53312] duration-200 text-xl px-10 md:px-3 py-4 md:py-2 block rounded-md"
                     >Contact</a
                   >
                 </li>
@@ -162,7 +170,7 @@
       <div class="aside-list flex flex-col items-center">
         <a
           href="#intro"
-          class="bg-[#086000] w-[20px] h-[20px] text-xs text-white rounded-full mb-[10px] flex items-center justify-center hover:scale-125 duration-100"
+          class="bg-[#086000] w-[25px] h-[25px] text-xs text-white rounded-full mb-[10px] flex items-center justify-center hover:scale-125 duration-100"
           >1</a
         >
         <a
@@ -225,7 +233,7 @@
       <div class="aside-list flex items-center">
         <a
           href="#intro"
-          class="bg-[#086000] w-[20px] h-[20px] text-xs text-white rounded-full mx-[5px] sm:mx-2 flex items-center justify-center"
+          class="bg-[#086000] w-[25px] h-[25px] text-xs text-white rounded-full mx-[5px] sm:mx-2 flex items-center justify-center"
           >1</a
         >
         <a
@@ -264,11 +272,6 @@
       HomeDev AGENCY
     </h1>
 
-    <!-- Intro Circle -->
-    <div
-      class="circle w-[170px] h-[170px] md:w-[343px] md:h-[343px] bg-[#1FEBB0] fixed -right-[20%] bottom-[20%] sm:-right-[10%] sm:bottom-[10%] md:-right-[8%] md:-bottom-[20%] rounded-full duration-200 -z-20"
-    ></div>
-
     <!-- Intro section -->
     <section id="intro" class="pb-24 sm:pb-16 md:py-20">
       <div
@@ -280,7 +283,7 @@
           data-aos-duration="1000"
         >
           <h1
-            class="font-bold mb-16 sm:mb-28 text-center md:text-left lg:mb-36 leading-[45px] text-[30px] md:leading-[50px] md:text-[35px] lg:leading-[60px] lg:text-[42px] xl:text-5xl xl:leading-[70px]"
+            class="font-bold mb-6 sm:mb-28 text-center md:text-left lg:mb-36 leading-[45px] text-[30px] md:leading-[50px] md:text-[35px] lg:leading-[60px] lg:text-[42px] xl:text-5xl xl:leading-[70px]"
           >
             HomeDev - Creating a Better IT Solutions.
           </h1>
@@ -296,7 +299,7 @@
           />
         </div>
         <div
-          class="w-full md:w-[45%] relative"
+          class="w-full md:w-[45%] relative overflow-hidden"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
@@ -423,14 +426,20 @@
         </h2>
         <div class="service__carousel owl-carousel w-full mx-auto">
           <div
-            class="service__carousel--item flex flex-col border border-gray-200 py-6 px-3 rounded-md"
+            class="service__carousel--item flex flex-col border border-gray-200 py-6 px-3 rounded-md bg-white items-center relative overflow-hidden"
           >
             <div class="w-full">
-              <img src="./images/service-crm.png" alt="service" />
+              <img
+                src="./images/service-responsive-design.png"
+                alt="service"
+                class="block mx-auto"
+              />
             </div>
-            <h3 class="text-2xl font-semibold mb-3 mt-6">Microservices</h3>
+            <h3 class="text-2xl font-semibold mb-3 mt-6 text-center">
+              Web Dev
+            </h3>
             <p
-              class="text-lg leading-6 text-[#00282F] h-[6.2rem] overflow-hidden"
+              class="text-base leading-6 text-[#00282F] h-[6.2rem] overflow-hidden text-center"
             >
               Lorem, ipsum dolor sit amet consectetur sit amet adipisicing elit.
               Laboriosam delectus necessitatibus.
@@ -442,14 +451,20 @@
             </button>
           </div>
           <div
-            class="service__carousel--item flex flex-col border border-gray-200 py-6 px-3 rounded-md"
+            class="service__carousel--item flex flex-col border border-gray-200 py-6 px-3 rounded-md bg-white items-center relative overflow-hidden"
           >
             <div class="w-full">
-              <img src="./images/service-dashboard.png" alt="service" />
+              <img
+                src="./images/service-crm.png"
+                alt="service"
+                class="block mx-auto"
+              />
             </div>
-            <h3 class="text-2xl font-semibold mb-3 mt-6">Web Dev</h3>
+            <h3 class="text-2xl font-semibold mb-3 mt-6 text-center">
+              Building CRM
+            </h3>
             <p
-              class="text-lg leading-6 text-[#00282F] h-[6.2rem] overflow-hidden"
+              class="text-base leading-6 text-[#00282F] h-[6.2rem] overflow-hidden text-center"
             >
               Lorem, ipsum dolor sit amet consectetur sit amet adipisicing elit.
               Laboriosam delectus necessitatibus.
@@ -461,14 +476,20 @@
             </button>
           </div>
           <div
-            class="service__carousel--item flex flex-col border border-gray-200 py-6 px-3 rounded-md"
+            class="service__carousel--item flex flex-col border border-gray-200 py-6 px-3 rounded-md bg-white items-center relative overflow-hidden"
           >
             <div class="w-full">
-              <img src="./images/service-mobile-app.png" alt="service" />
+              <img
+                src="./images/service-mobile-app.png"
+                alt="service"
+                class="block mx-auto"
+              />
             </div>
-            <h3 class="text-2xl font-semibold mb-3 mt-6">Mobile App</h3>
+            <h3 class="text-2xl font-semibold mb-3 mt-6 text-center">
+              Mobile Dev
+            </h3>
             <p
-              class="text-lg leading-6 text-[#00282F] h-[6.2rem] overflow-hidden"
+              class="text-base leading-6 text-[#00282F] h-[6.2rem] overflow-hidden text-center"
             >
               Lorem, ipsum dolor sit amet consectetur sit amet adipisicing elit.
               Laboriosam delectus necessitatibus.
@@ -480,14 +501,20 @@
             </button>
           </div>
           <div
-            class="service__carousel--item flex flex-col border border-gray-200 py-6 px-3 rounded-md"
+            class="service__carousel--item flex flex-col border border-gray-200 py-6 px-3 rounded-md bg-white items-center relative overflow-hidden"
           >
             <div class="w-full">
-              <img src="./images/service-responsive-design.png" alt="service" />
+              <img
+                src="./images/service-dashboard.png"
+                alt="service"
+                class="block mx-auto"
+              />
             </div>
-            <h3 class="text-2xl font-semibold mb-3 mt-6">IT business</h3>
+            <h3 class="text-2xl font-semibold mb-3 mt-6 text-center">
+              IT for Business
+            </h3>
             <p
-              class="text-lg leading-6 text-[#00282F] h-[6.2rem] overflow-hidden"
+              class="text-base leading-6 text-[#00282F] h-[6.2rem] overflow-hidden text-center"
             >
               Lorem, ipsum dolor sit amet consectetur sit amet adipisicing elit.
               Laboriosam delectus necessitatibus.
@@ -499,14 +526,20 @@
             </button>
           </div>
           <div
-            class="service__carousel--item flex flex-col border border-gray-200 py-6 px-3 rounded-md"
+            class="service__carousel--item flex flex-col border border-gray-200 py-6 px-3 rounded-md bg-white items-center relative overflow-hidden"
           >
             <div class="w-full">
-              <img src="./images/service-responsive-design.png" alt="service" />
+              <img
+                src="./images/service-crm.png"
+                alt="service"
+                class="block mx-auto"
+              />
             </div>
-            <h3 class="text-2xl font-semibold mb-3 mt-6">IT business</h3>
+            <h3 class="text-2xl font-semibold mb-3 mt-6 text-center">
+              Desctop Dev
+            </h3>
             <p
-              class="text-lg leading-6 text-[#00282F] h-[6.2rem] overflow-hidden"
+              class="text-base leading-6 text-[#00282F] h-[6.2rem] overflow-hidden text-center"
             >
               Lorem, ipsum dolor sit amet consectetur sit amet adipisicing elit.
               Laboriosam delectus necessitatibus.
@@ -566,7 +599,9 @@
             >
               Online Ta'lim tizimi web ilovasi.
             </p>
-            <ul class="flex justify-center lg:justify-start mt-2 sm:mt-4">
+            <ul
+              class="portfolio-nav flex justify-center lg:justify-start mt-2 sm:mt-4"
+            >
               <li
                 class="w-[25px] text-base sm:text-lg lg:text-xl sm:w-[30px] lg:w-[35px] h-[25px] sm:h-[30px] lg:h-[35px] hover:bg-[#00B533] hover:border-[#00B533] hover:text-white duration-200 cursor-pointer border border-gray-400 mr-2 rounded lg:rounded-md flex items-center justify-center"
               >
@@ -605,30 +640,30 @@
             class="hidden absolute z-0 lg:right-[7%] lg:block lg:-top-[7%] lg:w-[276px] xl:-top-[15%]"
           />
           <ul
-            class="portfolio-nav hidden bg-[#1FEBB0] p-4 rounded-lg absolute right-0 top-[25%] w-[313px] h-[273px] lg:flex flex-col justify-evenly items-end"
+            class="hidden bg-[#1FEBB0] p-4 rounded-lg absolute right-0 top-[25%] w-[313px] h-[273px] lg:flex flex-col justify-evenly items-end"
           >
             <li
-              class="nav-item text-[#086000] w-9 h-9 rounded-full bg-white flex items-center justify-center"
+              class="text-[#086000] w-9 h-9 rounded-full bg-white flex items-center justify-center"
             >
               01
             </li>
             <li
-              class="nav-item text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
+              class="text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
             >
               02
             </li>
             <li
-              class="nav-item text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
+              class="text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
             >
               03
             </li>
             <li
-              class="nav-item text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
+              class="text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
             >
               04
             </li>
             <li
-              class="nav-item text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
+              class="text-[#086000] w-9 h-9 rounded-full flex items-center justify-center"
             >
               05
             </li>
@@ -797,6 +832,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="./js/portfolio-data.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

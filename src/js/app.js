@@ -3,29 +3,34 @@ window.addEventListener("DOMContentLoaded", function () {
   // Header ----------------------------------------------------
   // -----------------------------------------------------------
   const header = document.querySelector(".header");
-  const circle = document.querySelector(".circle");
+  const menuList = document.querySelector(".menuList");
   if (window.scrollY > 0) {
     header.classList.add("bg-white", "active");
-    circle.classList.add("hidden", "-z-20");
+    menuList.classList.remove("top-[84px]", "sm:top-[93px]");
+    menuList.classList.add("active-top");
   }
   window.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
       header.classList.add("bg-white", "active");
-      circle.classList.add("hidden", "-z-20");
+      menuList.classList.remove("top-[84px]", "sm:top-[93px]");
+      menuList.classList.add("active-top");
     } else {
       header.classList.remove("bg-white", "active");
+      menuList.classList.add("top-[84px]", "sm:top-[93px]");
+      menuList.classList.remove("active-top");
+    }
+    if (menuList.classList.contains("flex")) {
+      header.classList.add("bg-white");
     }
   });
 
   // -----------------------------------------------------------
   // Menu & Sidebar --------------------------------------------
   // -----------------------------------------------------------
-  // const langMenu = document.querySelector(".lang-btn");
   const langList = document.querySelector(".langList");
   const langArea = document.querySelector(".lang-area");
   const langListItems = document.querySelectorAll(".langList > li");
   this.window.addEventListener("click", function (e) {
-    console.log(e.target);
     if (e.target.classList.contains("lang-element")) {
       langList.classList.toggle("hidden");
       langList.classList.toggle("flex");
@@ -37,6 +42,9 @@ window.addEventListener("DOMContentLoaded", function () {
     if (e.target.classList.contains("menu-element")) {
       menuList.classList.toggle("hidden");
       menuList.classList.toggle("flex");
+      if (menuList.classList.contains("flex")) {
+        header.classList.add("bg-white");
+      }
     } else {
       menuList.classList.add("hidden");
       menuList.classList.remove("flex");
@@ -55,19 +63,13 @@ window.addEventListener("DOMContentLoaded", function () {
   // Menu & Sidebar --------------------------------------------
   // -----------------------------------------------------------
   const menu = document.querySelector(".menu-btn");
-  const menuList = document.querySelector(".menuList");
   const menuItems = document.querySelectorAll(".menuList > li");
   const asideItems = document.querySelectorAll(".aside-list > a");
-
-  // menu.addEventListener("click", function (e) {
-  //   menuList.classList.toggle("hidden");
-  //   menuList.classList.toggle("flex");
-  // });
 
   menuItems.forEach((item, index) => {
     item.addEventListener("click", function () {
       asideItems.forEach((item) => {
-        item.classList.remove("w-[20px]", "h-[20px]", "text-white");
+        item.classList.remove("w-[25px]", "h-[25px]", "text-white");
         item.classList.add("w-[12px]", "h-[12px]", "text-[#086000]");
       });
       asideItems[index].classList.remove(
@@ -75,18 +77,18 @@ window.addEventListener("DOMContentLoaded", function () {
         "h-[12px]",
         "text-[#086000]"
       );
-      asideItems[index].classList.add("w-[20px]", "h-[20px]", "text-white");
+      asideItems[index].classList.add("w-[25px]", "h-[25px]", "text-white");
     });
   });
 
   asideItems.forEach((item) => {
     item.addEventListener("click", function () {
       asideItems.forEach((item) => {
-        item.classList.remove("w-[20px]", "h-[20px]", "text-white");
+        item.classList.remove("w-[25px]", "h-[25px]", "text-white");
         item.classList.add("w-[12px]", "h-[12px]", "text-[#086000]");
       });
       this.classList.remove("w-[12px]", "h-[12px]", "text-[#086000]");
-      this.classList.add("w-[20px]", "h-[20px]", "text-white");
+      this.classList.add("w-[25px]", "h-[25px]", "text-white");
     });
   });
 
@@ -135,5 +137,15 @@ window.addEventListener("DOMContentLoaded", function () {
         items: 3,
       },
     },
+  });
+
+  // -----------------------------------------------------------
+  // Portfolio -------------------------------------------------
+  // -----------------------------------------------------------
+  const portfolioItems = document.querySelectorAll(".portfolio-nav > li");
+  portfolioItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      console.log(this.innerText);
+    });
   });
 });

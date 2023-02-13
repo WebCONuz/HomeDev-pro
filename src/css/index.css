@@ -15,16 +15,8 @@ body {
   padding: 1rem 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-/* .menuList {
-  top: 93px;
-} */
 .menuList.active-top {
   top: 76px;
-}
-
-.circle {
-  box-shadow: 0px 0px 100px #00b533;
-  z-index: 1;
 }
 
 .about-circle {

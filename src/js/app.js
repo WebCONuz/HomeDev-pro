@@ -65,9 +65,11 @@ window.addEventListener("DOMContentLoaded", function () {
   const menu = document.querySelector(".menu-btn");
   const menuItems = document.querySelectorAll(".menuList > li");
   const asideItems = document.querySelectorAll(".aside-list > a");
+  const modileAsideItems = document.querySelectorAll(".mobile-aside > a");
 
   menuItems.forEach((item, index) => {
     item.addEventListener("click", function () {
+      // PC aside ---
       asideItems.forEach((item) => {
         item.classList.remove("w-[25px]", "h-[25px]", "text-white");
         item.classList.add("w-[12px]", "h-[12px]", "text-[#086000]");
@@ -78,12 +80,41 @@ window.addEventListener("DOMContentLoaded", function () {
         "text-[#086000]"
       );
       asideItems[index].classList.add("w-[25px]", "h-[25px]", "text-white");
+
+      // Mobile aside ---
+      modileAsideItems.forEach((item) => {
+        item.classList.remove("w-[25px]", "h-[25px]", "text-white");
+        item.classList.add("w-[12px]", "h-[12px]", "text-[#086000]");
+      });
+      modileAsideItems[index].classList.remove(
+        "w-[12px]",
+        "h-[12px]",
+        "text-[#086000]"
+      );
+      modileAsideItems[index].classList.add(
+        "w-[25px]",
+        "h-[25px]",
+        "text-white"
+      );
     });
   });
 
+  // PC aside ---
   asideItems.forEach((item) => {
     item.addEventListener("click", function () {
       asideItems.forEach((item) => {
+        item.classList.remove("w-[25px]", "h-[25px]", "text-white");
+        item.classList.add("w-[12px]", "h-[12px]", "text-[#086000]");
+      });
+      this.classList.remove("w-[12px]", "h-[12px]", "text-[#086000]");
+      this.classList.add("w-[25px]", "h-[25px]", "text-white");
+    });
+  });
+
+  // Mobile aside ---
+  modileAsideItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      modileAsideItems.forEach((item) => {
         item.classList.remove("w-[25px]", "h-[25px]", "text-white");
         item.classList.add("w-[12px]", "h-[12px]", "text-[#086000]");
       });

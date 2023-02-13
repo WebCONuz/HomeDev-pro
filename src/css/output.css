@@ -1316,6 +1316,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-\[\#00B533\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 181 51 / var(--tw-text-opacity));
+}
+
 .focus\:outline-0:focus {
   outline-width: 0px;
 }
@@ -1892,6 +1897,18 @@ video {
 
   .xl\:h-\[290px\] {
     height: 290px;
+  }
+
+  .xl\:h-\[263px\] {
+    height: 263px;
+  }
+
+  .xl\:h-\[260px\] {
+    height: 260px;
+  }
+
+  .xl\:h-\[255px\] {
+    height: 255px;
   }
 
   .xl\:w-\[66px\] {

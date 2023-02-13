@@ -174,9 +174,16 @@ window.addEventListener("DOMContentLoaded", function () {
   // Portfolio -------------------------------------------------
   // -----------------------------------------------------------
   const portfolioItems = document.querySelectorAll(".portfolio-nav > li");
-  portfolioItems.forEach((item) => {
+  const phoneView = document.querySelector(".phone > .phone_bg");
+  const desctopView = document.querySelector(".desctop > .desctop_bg");
+  const projectName = document.querySelector("#portfolio-link");
+  portfolioItems.forEach((item, i) => {
     item.addEventListener("click", function () {
-      console.log(this.innerText);
+      console.log(phoneView, portfolioData[i].phoneSrc);
+      phoneView.setAttribute("src", portfolioData[i].phoneSrc);
+      desctopView.setAttribute("src", portfolioData[i].pcSrc);
+      projectName.setAttribute("href", portfolioData[i].pathURL);
+      projectName.innerText = portfolioData[i].title;
     });
   });
 });

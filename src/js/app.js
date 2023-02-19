@@ -36,6 +36,8 @@ window.addEventListener("DOMContentLoaded", function () {
   // -----------------------------------------------------------
   const langList = document.querySelector(".langList");
   const langArea = document.querySelector(".lang-area");
+  const burger = document.querySelector(".menu-burder");
+  const close = document.querySelector(".menu-close");
   const langListItems = document.querySelectorAll(".langList > li");
   window.addEventListener("click", function (e) {
     if (e.target.classList.contains("lang-element")) {
@@ -48,6 +50,12 @@ window.addEventListener("DOMContentLoaded", function () {
     if (e.target.classList.contains("menu-element")) {
       menuList.classList.toggle("hidden");
       menuList.classList.toggle("flex");
+
+      burger.classList.toggle("flex");
+      burger.classList.toggle("hidden");
+
+      close.classList.toggle("hidden");
+      close.classList.toggle("flex");
       if (menuList.classList.contains("flex")) {
         header.classList.add("bg-white");
       } else if (menuList.classList.contains("hidden") && window.scrollY == 0) {
@@ -55,6 +63,8 @@ window.addEventListener("DOMContentLoaded", function () {
       }
     } else {
       replaceClass(menuList, ["flex"], ["hidden"]);
+      replaceClass(burger, ["hidden"], ["flex"]);
+      replaceClass(close, ["flex"], ["hidden"]);
     }
   });
   langListItems.forEach((item) => {

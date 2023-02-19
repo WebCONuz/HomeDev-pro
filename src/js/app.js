@@ -50,6 +50,8 @@ window.addEventListener("DOMContentLoaded", function () {
       menuList.classList.toggle("flex");
       if (menuList.classList.contains("flex")) {
         header.classList.add("bg-white");
+      } else if (menuList.classList.contains("hidden") && window.scrollY == 0) {
+        header.classList.remove("bg-white", "active");
       }
     } else {
       replaceClass(menuList, ["flex"], ["hidden"]);
@@ -64,10 +66,10 @@ window.addEventListener("DOMContentLoaded", function () {
       img.classList.add("lang-element");
     });
   });
+
   // -----------------------------------------------------------
   // Menu & Sidebar --------------------------------------------
   // -----------------------------------------------------------
-  const menu = document.querySelector(".menu-btn");
   const menuItems = document.querySelectorAll(".menuList > li");
   const asideItems = document.querySelectorAll(".aside-list > a");
   const modileAsideItems = document.querySelectorAll(".mobile-aside > a");
@@ -202,9 +204,9 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   // -----------------------------------------------------------
-  // Customer slider -------------------------------------------
+  // Team slider -----------------------------------------------
   // -----------------------------------------------------------
-  const owl2 = $(".blog__slider");
+  const owl2 = $(".team__slider");
   owl2.owlCarousel({
     loop: true,
     nav: true,
@@ -236,6 +238,10 @@ window.addEventListener("DOMContentLoaded", function () {
       desctopView.setAttribute("src", portfolioData[i].pcSrc);
       projectName.setAttribute("href", portfolioData[i].pathURL);
       projectName.innerText = portfolioData[i].title;
+      for (let k = 0; k < portfolioItems.length; k++) {
+        portfolioItems[k].classList.remove("active");
+      }
+      this.classList.add("active");
     });
   });
 });

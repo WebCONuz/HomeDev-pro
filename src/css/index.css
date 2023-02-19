@@ -25,7 +25,7 @@ body {
   z-index: 2;
   -webkit-text-fill-color: transparent;
   /* -webkit-text-stroke: rgba(0, 0, 0, 0.3); */
-  -webkit-text-stroke-color: rgba(0, 0, 0, 0.1);
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.2);
   /* -webkit-text-stroke-color: red; */
   -webkit-text-stroke-width: 1px;
 }
@@ -123,6 +123,15 @@ body {
 }
 .owl-nav button.owl-prev {
   right: 35%;
+}
+
+/* --------------------------------------------- */
+/* Postrfolio ---------------------------------- */
+/* --------------------------------------------- */
+.portfolio-nav > li.active {
+  border-color: #31a700;
+  background-color: #31a700;
+  color: #fff;
 }
 
 /* Media Responsive */

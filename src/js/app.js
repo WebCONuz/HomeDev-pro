@@ -1,4 +1,14 @@
 window.addEventListener("DOMContentLoaded", function () {
+  function replaceClass(element, delClassArr, addClassArr) {
+    element.classList.remove(...delClassArr);
+    element.classList.add(...addClassArr);
+  }
+  function arrReplaceClass(arr, delClassArr, addClassArr) {
+    arr.forEach((item) => {
+      replaceClass(item, delClassArr, addClassArr);
+    });
+  }
+
   // -----------------------------------------------------------
   // Header ----------------------------------------------------
   // -----------------------------------------------------------
@@ -6,18 +16,15 @@ window.addEventListener("DOMContentLoaded", function () {
   const menuList = document.querySelector(".menuList");
   if (window.scrollY > 0) {
     header.classList.add("bg-white", "active");
-    menuList.classList.remove("top-[84px]", "sm:top-[93px]");
-    menuList.classList.add("active-top");
+    replaceClass(menuList, ["top-[84px]", "sm:top-[93px]"], ["active-top"]);
   }
   window.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
       header.classList.add("bg-white", "active");
-      menuList.classList.remove("top-[84px]", "sm:top-[93px]");
-      menuList.classList.add("active-top");
+      replaceClass(menuList, ["top-[84px]", "sm:top-[93px]"], ["active-top"]);
     } else {
       header.classList.remove("bg-white", "active");
-      menuList.classList.add("top-[84px]", "sm:top-[93px]");
-      menuList.classList.remove("active-top");
+      replaceClass(menuList, ["active-top"], ["top-[84px]", "sm:top-[93px]"]);
     }
     if (menuList.classList.contains("flex")) {
       header.classList.add("bg-white");
@@ -25,18 +32,17 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   // -----------------------------------------------------------
-  // Menu & Sidebar --------------------------------------------
+  // Menu & Language -------------------------------------------
   // -----------------------------------------------------------
   const langList = document.querySelector(".langList");
   const langArea = document.querySelector(".lang-area");
   const langListItems = document.querySelectorAll(".langList > li");
-  this.window.addEventListener("click", function (e) {
+  window.addEventListener("click", function (e) {
     if (e.target.classList.contains("lang-element")) {
       langList.classList.toggle("hidden");
       langList.classList.toggle("flex");
     } else {
-      langList.classList.add("hidden");
-      langList.classList.remove("flex");
+      replaceClass(langList, ["flex"], ["hidden"]);
     }
 
     if (e.target.classList.contains("menu-element")) {
@@ -46,8 +52,7 @@ window.addEventListener("DOMContentLoaded", function () {
         header.classList.add("bg-white");
       }
     } else {
-      menuList.classList.add("hidden");
-      menuList.classList.remove("flex");
+      replaceClass(menuList, ["flex"], ["hidden"]);
     }
   });
   langListItems.forEach((item) => {
@@ -70,31 +75,27 @@ window.addEventListener("DOMContentLoaded", function () {
   menuItems.forEach((item, index) => {
     item.addEventListener("click", function () {
       // PC aside ---
-      asideItems.forEach((item) => {
-        item.classList.remove("w-[25px]", "h-[25px]", "text-white");
-        item.classList.add("w-[12px]", "h-[12px]", "text-[#086000]");
-      });
-      asideItems[index].classList.remove(
-        "w-[12px]",
-        "h-[12px]",
-        "text-[#086000]"
+      arrReplaceClass(
+        asideItems,
+        ["w-[25px]", "h-[25px]", "text-white"],
+        ["w-[12px]", "h-[12px]", "text-[#086000]"]
       );
-      asideItems[index].classList.add("w-[25px]", "h-[25px]", "text-white");
+      replaceClass(
+        asideItems[index],
+        ["w-[12px]", "h-[12px]", "text-[#086000]"],
+        ["w-[25px]", "h-[25px]", "text-white"]
+      );
 
       // Mobile aside ---
-      modileAsideItems.forEach((item) => {
-        item.classList.remove("w-[25px]", "h-[25px]", "text-white");
-        item.classList.add("w-[12px]", "h-[12px]", "text-[#086000]");
-      });
-      modileAsideItems[index].classList.remove(
-        "w-[12px]",
-        "h-[12px]",
-        "text-[#086000]"
+      arrReplaceClass(
+        modileAsideItems,
+        ["w-[25px]", "h-[25px]", "text-white"],
+        ["w-[12px]", "h-[12px]", "text-[#086000]"]
       );
-      modileAsideItems[index].classList.add(
-        "w-[25px]",
-        "h-[25px]",
-        "text-white"
+      replaceClass(
+        modileAsideItems[index],
+        ["w-[12px]", "h-[12px]", "text-[#086000]"],
+        ["w-[25px]", "h-[25px]", "text-white"]
       );
     });
   });
@@ -102,24 +103,76 @@ window.addEventListener("DOMContentLoaded", function () {
   // PC aside ---
   asideItems.forEach((item) => {
     item.addEventListener("click", function () {
-      asideItems.forEach((item) => {
-        item.classList.remove("w-[25px]", "h-[25px]", "text-white");
-        item.classList.add("w-[12px]", "h-[12px]", "text-[#086000]");
-      });
-      this.classList.remove("w-[12px]", "h-[12px]", "text-[#086000]");
-      this.classList.add("w-[25px]", "h-[25px]", "text-white");
+      arrReplaceClass(
+        asideItems,
+        ["w-[25px]", "h-[25px]", "text-white"],
+        ["w-[12px]", "h-[12px]", "text-[#086000]"]
+      );
+      replaceClass(
+        this,
+        ["w-[12px]", "h-[12px]", "text-[#086000]"],
+        ["w-[25px]", "h-[25px]", "text-white"]
+      );
     });
   });
 
   // Mobile aside ---
   modileAsideItems.forEach((item) => {
     item.addEventListener("click", function () {
-      modileAsideItems.forEach((item) => {
-        item.classList.remove("w-[25px]", "h-[25px]", "text-white");
-        item.classList.add("w-[12px]", "h-[12px]", "text-[#086000]");
-      });
-      this.classList.remove("w-[12px]", "h-[12px]", "text-[#086000]");
-      this.classList.add("w-[25px]", "h-[25px]", "text-white");
+      arrReplaceClass(
+        modileAsideItems,
+        ["w-[25px]", "h-[25px]", "text-white"],
+        ["w-[12px]", "h-[12px]", "text-[#086000]"]
+      );
+      replaceClass(
+        this,
+        ["w-[12px]", "h-[12px]", "text-[#086000]"],
+        ["w-[25px]", "h-[25px]", "text-white"]
+      );
+    });
+  });
+
+  // -----------------------------------------------------------
+  // Scroll & Sidebar ------------------------------------------
+  // -----------------------------------------------------------
+  const sectionAll = document.querySelectorAll("section[id]");
+  this.window.addEventListener("scroll", () => {
+    const scrollY = window.pageYOffset;
+    sectionAll.forEach((item) => {
+      const sectionHeight = item.offsetHeight;
+      const sectionTop = item.offsetTop - 100;
+      const sectionId = item.getAttribute("id");
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        // PC ----
+        const pcLink = document.querySelector(
+          ".aside-list > a[href*=" + sectionId + "]"
+        );
+        arrReplaceClass(
+          asideItems,
+          ["w-[25px]", "h-[25px]", "text-white"],
+          ["w-[12px]", "h-[12px]", "text-[#086000]"]
+        );
+        replaceClass(
+          pcLink,
+          ["w-[12px]", "h-[12px]", "text-[#086000]"],
+          ["w-[25px]", "h-[25px]", "text-white"]
+        );
+
+        // Mobile ----
+        const mobileLink = document.querySelector(
+          ".mobile-aside > a[href*=" + sectionId + "]"
+        );
+        arrReplaceClass(
+          modileAsideItems,
+          ["w-[25px]", "h-[25px]", "text-white"],
+          ["w-[12px]", "h-[12px]", "text-[#086000]"]
+        );
+        replaceClass(
+          mobileLink,
+          ["w-[12px]", "h-[12px]", "text-[#086000]"],
+          ["w-[25px]", "h-[25px]", "text-white"]
+        );
+      }
     });
   });
 
@@ -179,7 +232,6 @@ window.addEventListener("DOMContentLoaded", function () {
   const projectName = document.querySelector("#portfolio-link");
   portfolioItems.forEach((item, i) => {
     item.addEventListener("click", function () {
-      console.log(phoneView, portfolioData[i].phoneSrc);
       phoneView.setAttribute("src", portfolioData[i].phoneSrc);
       desctopView.setAttribute("src", portfolioData[i].pcSrc);
       projectName.setAttribute("href", portfolioData[i].pathURL);

@@ -3,22 +3,15 @@ body {
   font-weight: 500;
 }
 .bg-color {
-  background-image: linear-gradient(
-    0deg,
-    #31a700 0%,
-    #31a700 27%,
-    #00e13a 100%
-  );
+  background: linear-gradient(to bottom, #8c3af9, #58259e);
 }
 .text-color {
-  background: -webkit-linear-gradient(
-    0deg,
-    #31a700 0%,
-    #31a700 27%,
-    #00e13a 100%
-  );
+  background: -webkit-linear-gradient(to bottom, #8c3af9, #58259e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+button.bg-color:hover {
+  background: #fff;
 }
 
 /* --------------------------------------------- */
@@ -41,7 +34,7 @@ body {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #00e13a;
+  background: #58259e;
   margin: -4px 0 0 -4px;
 }
 .lds-roller div:nth-child(1) {
@@ -115,9 +108,7 @@ body {
 .title {
   z-index: 2;
   -webkit-text-fill-color: transparent;
-  /* -webkit-text-stroke: rgba(0, 0, 0, 0.3); */
   -webkit-text-stroke-color: rgba(0, 0, 0, 0.2);
-  /* -webkit-text-stroke-color: red; */
   -webkit-text-stroke-width: 1px;
 }
 
@@ -140,7 +131,7 @@ body {
   top: 0;
   left: 0;
   z-index: 0;
-  background-color: #00b53316;
+  background-color: #57259e24;
   transition: 0.2s;
 }
 .service__carousel--item:hover::before {
@@ -158,7 +149,7 @@ body {
 .owl-nav button {
   position: absolute;
   background-color: transparent !important;
-  width: 75px;
+  width: 50px;
   height: 20px;
   transition: 0.2s;
   display: block;
@@ -167,14 +158,14 @@ body {
   display: none;
 }
 .owl-nav button.owl-prev {
-  background-image: url("../images/next.svg") !important;
+  background-image: url("../images/right-arrow.png") !important;
   background-size: 100% !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
 .owl-nav button.owl-next {
   left: 10%;
-  background-image: url("../images/prev.svg") !important;
+  background-image: url("../images/left-arrow.png") !important;
   background-size: 100% !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -194,11 +185,11 @@ body {
   height: 12px;
   border-radius: 50%;
   margin: 0 5px;
-  background-color: #1febb0 !important;
+  background-color: #57259e85 !important;
   opacity: 0.5;
 }
 .owl-dots .owl-dot.active {
-  background-color: #00b533 !important;
+  background-color: #58259e !important;
   opacity: 1;
 }
 
@@ -217,11 +208,11 @@ body {
 }
 
 /* --------------------------------------------- */
-/* Postrfolio ---------------------------------- */
+/* Portfolio ---------------------------------- */
 /* --------------------------------------------- */
 .portfolio-nav > li.active {
-  border-color: #31a700;
-  background-color: #31a700;
+  border-color: #58259e;
+  background-image: linear-gradient(to bottom, #8c3af9, #58259e);
   color: #fff;
 }
 
@@ -242,7 +233,7 @@ body {
     top: 76px;
   }
   .about-circle {
-    box-shadow: 0px 0px 20px #049d2f;
+    box-shadow: 0px 0px 20px #8c3af9;
   }
   .owl-dots {
     bottom: -5%;
@@ -259,7 +250,7 @@ body {
     top: 68px;
   }
   .about-circle {
-    box-shadow: 0px 0px 10px #049d2f;
+    box-shadow: 0px 0px 10px #8c3af9;
   }
   .service__carousel--item img {
     width: 80px !important;

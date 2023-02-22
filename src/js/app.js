@@ -97,25 +97,25 @@ window.addEventListener("DOMContentLoaded", function () {
       // PC aside ---
       arrReplaceClass(
         asideItems,
-        ["w-[25px]", "h-[25px]", "text-white"],
-        ["w-[12px]", "h-[12px]", "text-[#086000]"]
+        ["w-[25px]", "h-[25px]", "text-[#58259e]"],
+        ["w-[12px]", "h-[12px]", "text-white"]
       );
       replaceClass(
         asideItems[index],
-        ["w-[12px]", "h-[12px]", "text-[#086000]"],
-        ["w-[25px]", "h-[25px]", "text-white"]
+        ["w-[12px]", "h-[12px]", "text-white"],
+        ["w-[25px]", "h-[25px]", "text-[#58259e]"]
       );
 
       // Mobile aside ---
       arrReplaceClass(
         modileAsideItems,
-        ["w-[25px]", "h-[25px]", "text-white"],
-        ["w-[12px]", "h-[12px]", "text-[#086000]"]
+        ["w-[25px]", "h-[25px]", "text-[#58259e]"],
+        ["w-[12px]", "h-[12px]", "text-white"]
       );
       replaceClass(
         modileAsideItems[index],
-        ["w-[12px]", "h-[12px]", "text-[#086000]"],
-        ["w-[25px]", "h-[25px]", "text-white"]
+        ["w-[12px]", "h-[12px]", "text-white"],
+        ["w-[25px]", "h-[25px]", "text-[#58259e]"]
       );
     });
   });
@@ -125,13 +125,13 @@ window.addEventListener("DOMContentLoaded", function () {
     item.addEventListener("click", function () {
       arrReplaceClass(
         asideItems,
-        ["w-[25px]", "h-[25px]", "text-white"],
-        ["w-[12px]", "h-[12px]", "text-[#086000]"]
+        ["w-[25px]", "h-[25px]", "text-[#58259e]"],
+        ["w-[12px]", "h-[12px]", "text-white"]
       );
       replaceClass(
         this,
-        ["w-[12px]", "h-[12px]", "text-[#086000]"],
-        ["w-[25px]", "h-[25px]", "text-white"]
+        ["w-[12px]", "h-[12px]", "text-white"],
+        ["w-[25px]", "h-[25px]", "text-[#58259e]"]
       );
     });
   });
@@ -141,13 +141,13 @@ window.addEventListener("DOMContentLoaded", function () {
     item.addEventListener("click", function () {
       arrReplaceClass(
         modileAsideItems,
-        ["w-[25px]", "h-[25px]", "text-white"],
-        ["w-[12px]", "h-[12px]", "text-[#086000]"]
+        ["w-[25px]", "h-[25px]", "text-[#58259e]"],
+        ["w-[12px]", "h-[12px]", "text-white"]
       );
       replaceClass(
         this,
-        ["w-[12px]", "h-[12px]", "text-[#086000]"],
-        ["w-[25px]", "h-[25px]", "text-white"]
+        ["w-[12px]", "h-[12px]", "text-white"],
+        ["w-[25px]", "h-[25px]", "text-[#58259e]"]
       );
     });
   });
@@ -169,13 +169,13 @@ window.addEventListener("DOMContentLoaded", function () {
         );
         arrReplaceClass(
           asideItems,
-          ["w-[25px]", "h-[25px]", "text-white"],
-          ["w-[12px]", "h-[12px]", "text-[#086000]"]
+          ["w-[25px]", "h-[25px]", "text-[#58259e]"],
+          ["w-[12px]", "h-[12px]", "text-white"]
         );
         replaceClass(
           pcLink,
-          ["w-[12px]", "h-[12px]", "text-[#086000]"],
-          ["w-[25px]", "h-[25px]", "text-white"]
+          ["w-[12px]", "h-[12px]", "text-white"],
+          ["w-[25px]", "h-[25px]", "text-[#58259e]"]
         );
 
         // Mobile ----
@@ -184,13 +184,13 @@ window.addEventListener("DOMContentLoaded", function () {
         );
         arrReplaceClass(
           modileAsideItems,
-          ["w-[25px]", "h-[25px]", "text-white"],
-          ["w-[12px]", "h-[12px]", "text-[#086000]"]
+          ["w-[25px]", "h-[25px]", "text-[#58259e]"],
+          ["w-[12px]", "h-[12px]", "text-white"]
         );
         replaceClass(
           mobileLink,
-          ["w-[12px]", "h-[12px]", "text-[#086000]"],
-          ["w-[25px]", "h-[25px]", "text-white"]
+          ["w-[12px]", "h-[12px]", "text-white"],
+          ["w-[25px]", "h-[25px]", "text-[#58259e]"]
         );
       }
     });

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- page title -->
+    <title>HomeDev</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/output.css" />
+    <!-- box-icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body class="bg-[#f8f8f8] overflow-x-hidden">
+    <!-- Loader window -->
+    <div
+      class="loader w-screen h-screen bg-white flex items-center justify-center fixed top-0 left-0 z-50"
+    >
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header py-6 w-full sticky top-0 left-0 z-20 duration-200">
+      <div class="container">
+        <div class="flex items-center sm:items-center justify-between">
+          <a href="#intro" class="logo">
+            <h2 class="flex items-baseline">
+              <img
+                src="../images/homedev.png"
+                alt="logo"
+                class="w-[30px] sm:w-8"
+              />
+              <span
+                class="text-color font-bold hidden sm:block sm:ml-2 text-2xl sm:text-3xl md:text-3xl"
+                >HomeDev</span
+              >
+            </h2>
+          </a>
+
+          <div class="header__btns flex items-center font-semibold">
+            <!-- lang -->
+            <div class="lang-btn lang-menu cursor-pointer relative">
+              <div class="lang-element lang-area flex items-center">
+                <span class="lang-element text-xl mr-2" lang-data="en"
+                  >Eng</span
+                >
+                <img
+                  src="../images/eng.png"
+                  alt="lang-flag"
+                  class="lang-element w-6"
+                />
+              </div>
+              <ul
+                class="langList absolute top-[45px] right-0 z-20 w-[100px] p-1 shadow-lg hidden flex-col bg-white rounded-lg duration-200"
+              >
+                <li
+                  class="flex items-center hover:text-[#58259e] hover:bg-[#57259e20] duration-200 px-3 py-[6px] rounded-md"
+                >
+                  <span class="text-lg mr-2" lang-data="uz">Uzb</span>
+                  <img src="../images/uzb.png" alt="lang-flag" class="w-6" />
+                </li>
+                <li
+                  class="flex items-center hover:text-[#58259e] hover:bg-[#57259e20] duration-200 px-3 py-[6px] rounded-md"
+                >
+                  <span class="text-lg mr-2" lang-data="ru">Rus</span>
+                  <img src="../images/rus.png" alt="lang-flag" class="w-6" />
+                </li>
+                <li
+                  class="flex items-center hover:text-[#58259e] hover:bg-[#57259e20] duration-200 px-3 py-[6px] rounded-md"
+                >
+                  <span class="text-lg mr-2" lang-data="en">Eng</span>
+                  <img src="../images/eng.png" alt="lang-flag" class="w-6" />
+                </li>
+              </ul>
+            </div>
+
+            <!-- menu -->
+            <div
+              class="menu-btn menu-element nav-menu cursor-pointer relative flex items-baseline sm:items-center ml-7"
+            >
+              <span class="menu-element text-xl mr-2 hidden sm:block"
+                >Menu</span
+              >
+              <img
+                src="../images/menu.svg"
+                alt="burger"
+                class="menu-element menu-burder block w-6"
+              />
+              <img
+                src="../images/close.png"
+                alt="close"
+                class="menu-element menu-close hidden w-6 scale-90"
+              />
+              <ul
+                class="menuList fixed top-[84px] sm:top-[93px] right-0 z-20 w-full p-4 md:p-1 shadow-lg hidden flex-col bg-white md:rounded-lg duration-200 md:w-[170px] md:absolute md:top-[47px] md:right-0"
+              >
+                <li>
+                  <a
+                    href="#intro"
+                    class="hover:text-[#58259e] hover:bg-[#57259e20] duration-200 text-xl px-10 md:px-3 py-4 md:py-2 block rounded-md"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="hover:text-[#58259e] hover:bg-[#57259e20] duration-200 text-xl px-10 md:px-3 py-4 md:py-2 block rounded-md"
+                    >About us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#service"
+                    class="hover:text-[#58259e] hover:bg-[#57259e20] duration-200 text-xl px-10 md:px-3 py-4 md:py-2 block rounded-md"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#portfolio"
+                    class="hover:text-[#58259e] hover:bg-[#57259e20] duration-200 text-xl px-10 md:px-3 py-4 md:py-2 block rounded-md"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#team"
+                    class="hover:text-[#58259e] hover:bg-[#57259e20] duration-200 text-xl px-10 md:px-3 py-4 md:py-2 block rounded-md"
+                    >team & News</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="hover:text-[#58259e] hover:bg-[#57259e20] duration-200 text-xl px-10 md:px-3 py-4 md:py-2 block rounded-md"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Login Form Section -->
+    <main class="main">
+      <div
+        class="container min-h-[76vh] flex flex-col items-center justify-center"
+      >
+        <h1 class="text-center mb-6 text-3xl font-semibold text-violet-700">
+          Enter Adminstration
+        </h1>
+        <form
+          action=""
+          class="block sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[40%]"
+        >
+          <div class="w-full p-4 bg-gray-200 rounded-lg">
+            <label for="adminEmail" class="block w-full mb-4">
+              <p class="text-lg mb-2">Login:</p>
+              <input
+                id="adminEmail"
+                type="text"
+                class="w-full border border-gray-200 rounded-md py-2 px-4 focus:outline-none text-[#333333d8] focus:ring-4 focus:ring-violet-400"
+                placeholder="Your email"
+              />
+            </label>
+            <label for="adminPassword" class="block w-full mb-4">
+              <p class="text-lg mb-2">Password:</p>
+              <input
+                id="adminPassword"
+                type="password"
+                class="w-full border border-gray-200 rounded-md py-2 px-4 focus:outline-none text-[#333333d8] focus:ring-4 focus:ring-violet-400"
+                placeholder="Your password"
+              />
+            </label>
+            <input
+              type="submit"
+              class="py-2 px-8 rounded-md bg-green-500 text-white"
+              value="Log in"
+            />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="footer mb-10 md:mb-0">
+      <div class="container w-full">
+        <p class="text-center text-lg py-6 border-t border-gray-200">
+          <a href="#intro" class="cursor-pointer text-gray-500"
+            >&copy; Copyright
+            <script>
+              document.write(`${new Date().getFullYear()}, `);
+            </script>
+            HomeDev</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- script files -->
+    <script src="../js/apiData.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

@@ -6,7 +6,12 @@ body {
   background: linear-gradient(to bottom, #8c3af9, #58259e);
 }
 .text-color {
-  background: -webkit-linear-gradient(to bottom, #8c3af9, #58259e);
+  background: -webkit-linear-gradient(
+    0deg,
+    #58259e 0%,
+    #58259e 27%,
+    #8c3af9 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

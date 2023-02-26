@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- page title -->
+    <title>HomeDev</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/output.css" />
+    <!-- box-icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body class="bg-[#f8f8f8] overflow-x-hidden">
+    <!-- Loader window -->
+    <div
+      class="loader w-screen h-screen bg-white flex items-center justify-center fixed top-0 left-0 z-50"
+    >
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header py-6 w-full sticky top-0 left-0 z-20 duration-200">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <a href="#intro" class="logo">
+            <h2 class="flex items-baseline">
+              <img
+                src="../images/homedev.png"
+                alt="logo"
+                class="w-[30px] sm:w-8"
+              />
+              <span
+                class="text-color font-bold hidden sm:block sm:ml-2 text-2xl sm:text-3xl md:text-3xl"
+                >HomeDev</span
+              >
+            </h2>
+          </a>
+
+          <ul class="flex items-center">
+            <li class="mx-4">
+              <a href="#intro" class="hover:text-[#58259e] duration-200"
+                >Service</a
+              >
+            </li>
+            <li class="mx-4">
+              <a href="#about" class="hover:text-[#58259e] duration-200"
+                >Team Member</a
+              >
+            </li>
+            <li class="mx-4">
+              <a href="#service" class="hover:text-[#58259e] duration-200"
+                >Works</a
+              >
+            </li>
+            <li class="mx-4">
+              <a href="#portfolio" class="hover:text-[#58259e] duration-200"
+                >Message</a
+              >
+            </li>
+            <li class="mx-4">
+              <a href="#team" class="hover:text-[#58259e] duration-200"
+                >Logout</a
+              >
+            </li>
+          </ul>
+
+          <div class="header__btns flex items-center font-semibold">
+            <!-- lang -->
+            <div class="lang-btn lang-menu cursor-pointer relative">
+              <div class="lang-element lang-area flex items-center">
+                <span class="lang-element text-xl mr-2" lang-data="en"
+                  >Eng</span
+                >
+                <img
+                  src="../images/eng.png"
+                  alt="lang-flag"
+                  class="lang-element w-6"
+                />
+              </div>
+              <ul
+                class="langList absolute top-[45px] right-0 z-20 w-[100px] p-1 shadow-lg hidden flex-col bg-white rounded-lg duration-200"
+              >
+                <li
+                  class="flex items-center hover:text-[#58259e] hover:bg-[#57259e20] duration-200 px-3 py-[6px] rounded-md"
+                >
+                  <span class="text-lg mr-2" lang-data="uz">Uzb</span>
+                  <img src="../images/uzb.png" alt="lang-flag" class="w-6" />
+                </li>
+                <li
+                  class="flex items-center hover:text-[#58259e] hover:bg-[#57259e20] duration-200 px-3 py-[6px] rounded-md"
+                >
+                  <span class="text-lg mr-2" lang-data="ru">Rus</span>
+                  <img src="../images/rus.png" alt="lang-flag" class="w-6" />
+                </li>
+                <li
+                  class="flex items-center hover:text-[#58259e] hover:bg-[#57259e20] duration-200 px-3 py-[6px] rounded-md"
+                >
+                  <span class="text-lg mr-2" lang-data="en">Eng</span>
+                  <img src="../images/eng.png" alt="lang-flag" class="w-6" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Login Form Section -->
+    <main class="main">
+      <div class="container min-h-[76vh]">
+        <h2 class="pt-8 pb-4 text-3xl font-bold">Services</h2>
+        <table id="service" class="table-auto border border-slate-400 w-full">
+          <thead>
+            <tr>
+              <th class="border border-slate-300 p-2">ID</th>
+              <th class="border border-slate-300 p-2">Service name</th>
+              <th class="border border-slate-300 p-2">Description</th>
+              <th class="border border-slate-300 p-2">Image</th>
+              <th class="border border-slate-300 p-2">Lang</th>
+              <th class="border border-slate-300 p-2">Active</th>
+              <th class="border border-slate-300 p-2">Option</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-slate-300 p-2">1</td>
+              <td class="border border-slate-300 p-2">CRM</td>
+              <td class="border border-slate-300 p-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+                omnis, debitis id eligendi recusandae vitae, temporibus, quo
+                voluptate qui commodi repellendus? Repellat consectetur
+                laudantium labore!
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <img
+                  src="../images/service-crm.png"
+                  alt="crm"
+                  class="w-10 inline-block"
+                />
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <span
+                  class="inline-block py-1 px-3 text-sm rounded-xl bg-blue-500 text-white"
+                  >uz</span
+                >
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <i class="bx bxs-check-square text-3xl text-green-700"></i>
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <div class="flex">
+                  <button
+                    class="border border-green-500 text-green-500 py-1 px-2 text-sm rounded-md duration-200 hover:bg-green-500 hover:text-white"
+                  >
+                    <i class="bx bx-message-square-add text-xl"></i></button
+                  ><br />
+                  <button
+                    class="border border-blue-500 text-blue-500 py-1 px-2 text-sm mx-2 rounded-md duration-200 hover:bg-blue-500 hover:text-white"
+                  >
+                    <i class="bx bx-edit text-xl"></i></button
+                  ><br />
+                  <button
+                    class="border border-red-500 text-red-500 py-1 px-2 text-sm rounded-md duration-200 hover:bg-red-500 hover:text-white"
+                  >
+                    <i class="bx bx-trash text-xl"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-slate-300 p-2">2</td>
+              <td class="border border-slate-300 p-2">Mobile Dev</td>
+              <td class="border border-slate-300 p-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+                omnis, debitis id eligendi recusandae vitae, temporibus, quo
+                voluptate.
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <img
+                  src="../images/service-mobile-app.png"
+                  alt="responsive"
+                  class="w-10 inline-block"
+                />
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <span
+                  class="inline-block py-1 px-3 text-sm rounded-xl bg-violet-500 text-white"
+                  >en</span
+                >
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <i class="bx bxs-check-square text-3xl text-green-700"></i>
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <div class="flex">
+                  <button
+                    class="border border-green-500 text-green-500 py-1 px-2 text-sm rounded-md duration-200 hover:bg-green-500 hover:text-white"
+                  >
+                    <i class="bx bx-message-square-add text-xl"></i></button
+                  ><br />
+                  <button
+                    class="border border-blue-500 text-blue-500 py-1 px-2 text-sm mx-2 rounded-md duration-200 hover:bg-blue-500 hover:text-white"
+                  >
+                    <i class="bx bx-edit text-xl"></i></button
+                  ><br />
+                  <button
+                    class="border border-red-500 text-red-500 py-1 px-2 text-sm rounded-md duration-200 hover:bg-red-500 hover:text-white"
+                  >
+                    <i class="bx bx-trash text-xl"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-slate-300 p-2">3</td>
+              <td class="border border-slate-300 p-2">Responsive Design</td>
+              <td class="border border-slate-300 p-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+                omnis, debitis id eligendi recusandae vitae, temporibus, quo
+                voluptate qui commodi repellendus? Repellat consectetur
+                laudantium labore! qui commodi repellendus? Repellat consectetur
+                laudantium labore.
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <img
+                  src="../images/service-responsive-design.png"
+                  alt="responsive"
+                  class="w-10 inline-block"
+                />
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <span
+                  class="inline-block py-1 px-3 text-sm rounded-xl bg-red-500 text-white"
+                  >ru</span
+                >
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <i class="bx bxs-square text-3xl text-red-700"></i>
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <div class="flex">
+                  <button
+                    class="border border-green-500 text-green-500 py-1 px-2 text-sm rounded-md duration-200 hover:bg-green-500 hover:text-white"
+                  >
+                    <i class="bx bx-message-square-add text-xl"></i></button
+                  ><br />
+                  <button
+                    class="border border-blue-500 text-blue-500 py-1 px-2 text-sm mx-2 rounded-md duration-200 hover:bg-blue-500 hover:text-white"
+                  >
+                    <i class="bx bx-edit text-xl"></i></button
+                  ><br />
+                  <button
+                    class="border border-red-500 text-red-500 py-1 px-2 text-sm rounded-md duration-200 hover:bg-red-500 hover:text-white"
+                  >
+                    <i class="bx bx-trash text-xl"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="pt-8 pb-4 text-3xl font-bold">Portfolio</h2>
+        <table id="Portfolio" class="table-auto border border-slate-400 w-full">
+          <thead>
+            <tr>
+              <th class="border border-slate-300 p-2">ID</th>
+              <th class="border border-slate-300 p-2">Portfolio name</th>
+              <th class="border border-slate-300 p-2">Link</th>
+              <th class="border border-slate-300 p-2">PC image</th>
+              <th class="border border-slate-300 p-2">Phone image</th>
+              <th class="border border-slate-300 p-2">Lang</th>
+              <th class="border border-slate-300 p-2">Option</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-slate-300 p-2">1</td>
+              <td class="border border-slate-300 p-2">
+                Online Ta'lim tizimi web ilovasi.
+              </td>
+              <td class="border border-slate-300 p-2">http://localhost:5500</td>
+              <td class="border border-slate-300 p-2 text-center">
+                <img
+                  src="../images/portfolio/pc-work1.jpg"
+                  alt="pc-work1"
+                  class="w-24 inline-block"
+                />
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <img
+                  src="../images/portfolio/mobile-work1.jpg"
+                  alt="pc-work1"
+                  class="w-7 inline-block"
+                />
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <span
+                  class="inline-block py-1 px-3 text-sm rounded-xl bg-blue-500 text-white"
+                  >uz</span
+                >
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <div class="flex">
+                  <button
+                    class="border border-green-500 text-green-500 py-1 px-2 text-sm rounded-md duration-200 hover:bg-green-500 hover:text-white"
+                  >
+                    <i class="bx bx-message-square-add text-xl"></i></button
+                  ><br />
+                  <button
+                    class="border border-blue-500 text-blue-500 py-1 px-2 text-sm mx-2 rounded-md duration-200 hover:bg-blue-500 hover:text-white"
+                  >
+                    <i class="bx bx-edit text-xl"></i></button
+                  ><br />
+                  <button
+                    class="border border-red-500 text-red-500 py-1 px-2 text-sm rounded-md duration-200 hover:bg-red-500 hover:text-white"
+                  >
+                    <i class="bx bx-trash text-xl"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-slate-300 p-2">2</td>
+              <td class="border border-slate-300 p-2">
+                Online Education System web application.
+              </td>
+              <td class="border border-slate-300 p-2">http://localhost:5500</td>
+              <td class="border border-slate-300 p-2 text-center">
+                <img
+                  src="../images/portfolio/pc-work1.jpg"
+                  alt="pc-work1"
+                  class="w-24 inline-block"
+                />
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <img
+                  src="../images/portfolio/mobile-work1.jpg"
+                  alt="pc-work1"
+                  class="w-7 inline-block"
+                />
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <span
+                  class="inline-block py-1 px-3 text-sm rounded-xl bg-violet-500 text-white"
+                  >en</span
+                >
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <div class="flex">
+                  <button
+                    class="border border-green-500 text-green-500 py-1 px-2 text-sm rounded-md duration-200 hover:bg-green-500 hover:text-white"
+                  >
+                    <i class="bx bx-message-square-add text-xl"></i></button
+                  ><br />
+                  <button
+                    class="border border-blue-500 text-blue-500 py-1 px-2 text-sm mx-2 rounded-md duration-200 hover:bg-blue-500 hover:text-white"
+                  >
+                    <i class="bx bx-edit text-xl"></i></button
+                  ><br />
+                  <button
+                    class="border border-red-500 text-red-500 py-1 px-2 text-sm rounded-md duration-200 hover:bg-red-500 hover:text-white"
+                  >
+                    <i class="bx bx-trash text-xl"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-slate-300 p-2">3</td>
+              <td class="border border-slate-300 p-2">
+                Веб-приложение системы онлайн-образования.
+              </td>
+              <td class="border border-slate-300 p-2">http://localhost:5500</td>
+              <td class="border border-slate-300 p-2 text-center">
+                <img
+                  src="../images/portfolio/pc-work1.jpg"
+                  alt="pc-work1"
+                  class="w-24 inline-block"
+                />
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <img
+                  src="../images/portfolio/mobile-work1.jpg"
+                  alt="pc-work1"
+                  class="w-7 inline-block"
+                />
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <span
+                  class="inline-block py-1 px-3 text-sm rounded-xl bg-red-500 text-white"
+                  >ru</span
+                >
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <div class="flex">
+                  <button
+                    class="border border-green-500 text-green-500 py-1 px-2 text-sm rounded-md duration-200 hover:bg-green-500 hover:text-white"
+                  >
+                    <i class="bx bx-message-square-add text-xl"></i></button
+                  ><br />
+                  <button
+                    class="border border-blue-500 text-blue-500 py-1 px-2 text-sm mx-2 rounded-md duration-200 hover:bg-blue-500 hover:text-white"
+                  >
+                    <i class="bx bx-edit text-xl"></i></button
+                  ><br />
+                  <button
+                    class="border border-red-500 text-red-500 py-1 px-2 text-sm rounded-md duration-200 hover:bg-red-500 hover:text-white"
+                  >
+                    <i class="bx bx-trash text-xl"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="pt-8 pb-4 text-3xl font-bold">Our Team</h2>
+        <table id="Portfolio" class="table-auto border border-slate-400 w-full">
+          <thead>
+            <tr>
+              <th class="border border-slate-300 p-2">ID</th>
+              <th class="border border-slate-300 p-2">Full name</th>
+              <th class="border border-slate-300 p-2">description</th>
+              <th class="border border-slate-300 p-2">Avatar image</th>
+              <th class="border border-slate-300 p-2">Phone</th>
+              <th class="border border-slate-300 p-2">Email</th>
+              <th class="border border-slate-300 p-2">Lang</th>
+              <th class="border border-slate-300 p-2">Option</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-slate-300 p-2">1</td>
+              <td class="border border-slate-300 p-2">Jamol Saidov.</td>
+              <td class="border border-slate-300 p-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+                fuga repellat magnam omnis iste blanditiis repellendus
+                voluptate, dolorum culpa nostrum!
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <img
+                  src="../images/man.png"
+                  alt="avatar"
+                  class="w-10 inline-block"
+                />
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                +998995456312
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                jamol@gmail.com
+              </td>
+              <td class="border border-slate-300 p-2 text-center">
+                <span
+                  class="inline-block py-1 px-3 text-sm rounded-xl bg-blue-500 text-white"
+                  >uz</span
+                >
+              </td>
+              <td class="border border-slate-300 p-2">
+                <div class="flex">
+                  <button
+                    class="border border-green-500 text-green-500 py-1 px-2 text-sm rounded-md duration-200 hover:bg-green-500 hover:text-white"
+                  >
+                    <i class="bx bx-message-square-add text-xl"></i></button
+                  ><br />
+                  <button
+                    class="border border-blue-500 text-blue-500 py-1 px-2 text-sm mx-2 rounded-md duration-200 hover:bg-blue-500 hover:text-white"
+                  >
+                    <i class="bx bx-edit text-xl"></i></button
+                  ><br />
+                  <button
+                    class="border border-red-500 text-red-500 py-1 px-2 text-sm rounded-md duration-200 hover:bg-red-500 hover:text-white"
+                  >
+                    <i class="bx bx-trash text-xl"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="footer mb-10 md:mb-0">
+      <div class="container w-full">
+        <p class="text-center text-lg py-6 border-t border-gray-200">
+          <a href="#intro" class="cursor-pointer text-gray-500"
+            >&copy; Copyright
+            <script>
+              document.write(`${new Date().getFullYear()}, `);
+            </script>
+            HomeDev</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- script files -->
+    <script src="../js/apiData.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

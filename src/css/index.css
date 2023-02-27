@@ -3,7 +3,7 @@ body {
   font-weight: 500;
 }
 .bg-color {
-  background: linear-gradient(to bottom, #8c3af9, #58259e);
+  background: linear-gradient(to bottom, #8c3af9, #58259e) !important;
 }
 .text-color {
   background: -webkit-linear-gradient(
@@ -16,7 +16,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 button.bg-color:hover {
-  background: #fff;
+  background: #fff !important;
+  color: #58259e;
+  outline: 1px solid #58259e;
 }
 
 /* --------------------------------------------- */
